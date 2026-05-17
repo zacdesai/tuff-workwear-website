@@ -1,0 +1,313 @@
+/* ============================================================
+ * Tuff Workwear — globals.css
+ * Token layer + base layer + utility layer.
+ * Drop into app/globals.css in a Next.js project and import once.
+ * ============================================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+ * 1. Token layer — :root custom properties
+ * Single source of truth for runtime values.
+ * ============================================================ */
+
+:root {
+  /* Brand */
+  --brand-charcoal: #2D2D2D;
+  --brand-orange: #E8611A;
+  --brand-white: #FFFFFF;
+  --brand-grey: #B0B0B0;
+  --brand-black: #111111;
+
+  /* Neutral ramp */
+  --neutral-50: #F7F7F7;
+  --neutral-100: #EDEDED;
+  --neutral-200: #D9D9D9;
+  --neutral-300: #B0B0B0;
+  --neutral-400: #8A8A8A;
+  --neutral-500: #6B6B6B;
+  --neutral-600: #4A4A4A;
+  --neutral-700: #2D2D2D;
+  --neutral-800: #1F1F1F;
+  --neutral-900: #111111;
+
+  /* Orange ramp */
+  --orange-50: #FFF2EA;
+  --orange-100: #FCDBC4;
+  --orange-300: #F19661;
+  --orange-500: #E8611A;
+  --orange-600: #CE521A;
+  --orange-700: #A53F0F;
+  --orange-800: #7C2E08;
+
+  /* Semantic */
+  --success-500: #2E8E4A;
+  --success-50: #E5F4EA;
+  --warning-500: #C18A00;
+  --warning-50: #FBF1D9;
+  --danger-500: #B83A2B;
+  --danger-50: #F7E1DD;
+  --info-500: #2D6CB0;
+
+  /* High-viz photographic accent (not for UI) */
+  --hiviz-yellow: #E5FF00;
+
+  /* Surface roles */
+  --surface-page: var(--brand-white);
+  --surface-raised: var(--brand-white);
+  --surface-inverse: var(--neutral-900);
+  --surface-orange: var(--orange-500);
+
+  /* Text roles */
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-500);
+  --text-on-orange: var(--brand-white);
+
+  /* Borders */
+  --border-subtle: var(--neutral-200);
+  --border-strong: var(--neutral-400);
+  --ring-focus: var(--orange-500);
+
+  /* Radii */
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(17, 17, 17, 0.06);
+  --shadow-md: 0 4px 8px rgba(17, 17, 17, 0.08);
+  --shadow-lg: 0 12px 24px rgba(17, 17, 17, 0.12);
+  --shadow-glow-orange: 0 0 24px rgba(232, 97, 26, 0.45);
+
+  /* Motion */
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 360ms;
+  --easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --easing-emphasis: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-out: cubic-bezier(0, 0, 0.2, 1);
+
+  /* Type families
+   * Loaded via next/font in app/layout.tsx and exposed as CSS vars there.
+   * Fallback chain handles SSR before fonts load. */
+  --font-display: "Archivo Black", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Menlo", monospace;
+}
+
+/* Dark surface utility (for full-dark sections like the footer)
+ * Apply [data-surface="dark"] on a wrapper to flip role tokens. */
+[data-surface="dark"] {
+  --surface-page: var(--neutral-900);
+  --surface-raised: var(--neutral-800);
+  --text-primary: var(--brand-white);
+  --text-secondary: var(--neutral-300);
+  --border-subtle: var(--neutral-700);
+  --border-strong: var(--neutral-500);
+}
+
+/* ============================================================
+ * 2. Base layer — element resets and defaults
+ * ============================================================ */
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "cv11";
+    line-height: 1.5;
+  }
+
+  /* Display headings — Archivo Black */
+  h1,
+  h2 {
+    @apply font-display;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  /* Subheadings — Inter, heavy */
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-sans font-bold;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  /* Numbers always tabular */
+  .tabular,
+  [data-tabular] {
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--orange-500);
+    color: var(--brand-white);
+  }
+
+  /* Focus visible — orange ring */
+  :focus-visible {
+    outline: 2px solid var(--ring-focus);
+    outline-offset: 2px;
+  }
+
+  /* Reduced motion — kill non-essential animation */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* ============================================================
+ * 3. Component layer — Tuff-specific patterns
+ * ============================================================ */
+
+@layer components {
+
+  /* The orange brand rule — sits under wordmarks and section titles */
+  .tuff-rule {
+    @apply block bg-brand-orange;
+    height: 4px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Price emphasis — pulls the ad-set glow into the UI */
+  .price-emphasis {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--brand-white);
+    text-shadow: 0 0 24px rgba(232, 97, 26, 0.6);
+  }
+
+  .price-emphasis-light {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--orange-700);
+  }
+
+  /* Eyebrow label — small uppercase tag above section titles */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase;
+    letter-spacing: 0.1em;
+    color: var(--neutral-500);
+  }
+
+  [data-surface="dark"] .eyebrow {
+    color: var(--neutral-300);
+  }
+
+  /* MOQ chip — used next to prices */
+  .chip-moq {
+    @apply inline-flex items-center rounded-pill text-xs font-semibold;
+    padding: 4px 10px;
+    background-color: var(--orange-100);
+    color: var(--orange-800);
+  }
+
+  /* Charcoal section wrapper — full-bleed dark panel */
+  .section-charcoal {
+    background-color: var(--brand-charcoal);
+    color: var(--brand-white);
+  }
+
+  /* Contact bar — the orange-700 strip from the ad anatomy */
+  .contact-bar {
+    background-color: var(--orange-700);
+    color: var(--brand-white);
+    @apply py-3 px-4 text-sm font-medium;
+  }
+
+  /* Sticky mobile CTA bar */
+  .sticky-cta-mobile {
+    @apply fixed bottom-0 left-0 right-0 z-sticky;
+    background-color: var(--brand-charcoal);
+    color: var(--brand-white);
+    padding: 12px 16px;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* ============================================================
+ * 4. Utility additions
+ * ============================================================ */
+
+@layer utilities {
+  /* Container with the right gutters across breakpoints */
+  .container-tuff {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    max-width: 1200px;
+  }
+
+  @media (min-width: 768px) {
+    .container-tuff {
+      padding-inline: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-tuff {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Section vertical rhythm */
+  .section-py {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: 768px) {
+    .section-py {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-py {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  .section-py-hero {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: 1024px) {
+    .section-py-hero {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+  }
+}

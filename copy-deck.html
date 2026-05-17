@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tuff Workwear — Copy Deck for Review</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f5; color: #1a1a1a; line-height: 1.6; }
+
+  .top-bar { background: #2d2d2d; color: #fff; padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 100; }
+  .top-bar h1 { font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+  .top-bar p { font-size: 12px; color: #aaa; }
+
+  .nav { display: flex; gap: 8px; background: #fff; border-bottom: 1px solid #e0e0e0; padding: 0 32px; overflow-x: auto; position: sticky; top: 47px; z-index: 99; }
+  .nav a { display: block; padding: 12px 16px; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #666; text-decoration: none; white-space: nowrap; border-bottom: 3px solid transparent; }
+  .nav a:hover, .nav a.active { color: #e8611a; border-color: #e8611a; }
+
+  .container { max-width: 900px; margin: 0 auto; padding: 48px 32px; }
+
+  .page-block { margin-bottom: 64px; }
+  .page-header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+  .page-tag { background: #e8611a; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; }
+  .page-title { font-size: 22px; font-weight: 700; }
+  .page-url { font-size: 12px; color: #888; font-family: monospace; margin-left: auto; }
+
+  .section { background: #fff; border: 1px solid #e0e0e0; margin-bottom: 16px; }
+  .section-header { background: #f9f9f9; border-bottom: 1px solid #e0e0e0; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
+  .section-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: #666; }
+  .section-status { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; padding: 2px 8px; border-radius: 2px; }
+  .status-current { background: #e3f2fd; color: #1565c0; }
+  .status-proposed { background: #e8f5e9; color: #2e7d32; }
+  .status-new { background: #fff3e0; color: #e65100; }
+
+  .section-body { padding: 20px; }
+
+  .copy-block { margin-bottom: 20px; }
+  .copy-block:last-child { margin-bottom: 0; }
+  .copy-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #aaa; margin-bottom: 6px; }
+  .copy-text { font-size: 15px; line-height: 1.65; color: #1a1a1a; }
+  .copy-text.eyebrow { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 700; color: #e8611a; }
+  .copy-text.heading { font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em; }
+  .copy-text.small { font-size: 13px; color: #555; }
+
+  .copy-list { list-style: none; margin-top: 6px; }
+  .copy-list li { padding: 4px 0 4px 16px; position: relative; font-size: 14px; }
+  .copy-list li::before { content: "·"; position: absolute; left: 4px; color: #e8611a; font-weight: 900; }
+
+  .note { background: #fffbf0; border-left: 3px solid #f0c040; padding: 10px 16px; margin-top: 12px; font-size: 13px; color: #555; }
+  .note strong { color: #1a1a1a; }
+  .flag { background: #fce8e8; border-left: 3px solid #e53935; padding: 10px 16px; margin-top: 12px; font-size: 13px; color: #555; }
+  .flag strong { color: #b71c1c; }
+
+  .divider { height: 1px; background: #f0f0f0; margin: 20px 0; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+
+  .strategy-bar { background: #2d2d2d; color: #e0e0e0; font-size: 12px; padding: 10px 20px; line-height: 1.5; }
+  .strategy-bar strong { color: #e8611a; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <h1>Tuff Workwear — Copy Deck</h1>
+  <p>Review before implementation · May 2026</p>
+</div>
+
+<nav class="nav">
+  <a href="#homepage">Homepage</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#branding">Branding</a>
+  <a href="#bulk">Bulk orders</a>
+  <a href="#meta">Meta &amp; SEO</a>
+  <a href="#images">Image plan</a>
+</nav>
+
+<div class="container">
+
+<!-- ─── HOMEPAGE ─────────────────────────────────────────────── -->
+<div class="page-block" id="homepage">
+  <div class="page-header">
+    <span class="page-tag">Page</span>
+    <span class="page-title">Homepage</span>
+    <span class="page-url">/</span>
+  </div>
+
+  <div class="strategy-bar">
+    <strong>Copy strategy:</strong> Buyer is solution-aware — they know they need workwear, they're comparing suppliers. Lead with price and product (they want this upfront), then proof (Taurus, 20 years, real clients). Keep it tight. No warm-up laps.
+  </div>
+
+  <!-- Hero -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Hero section</span>
+      <span class="section-status status-proposed">Proposed update</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">Durban's workwear crew</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Headline (keep — brand tagline)</div>
+        <div class="copy-text heading">Built Tough.<br>Priced Right.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Conti suits from R149. Boots from R295. We're Taurus Workwear's Durban base — 20 years of supply to mines, factories, contractors and small businesses that need their gear sorted.</div>
+      </div>
+      <div class="divider"></div>
+      <div class="two-col">
+        <div class="copy-block">
+          <div class="copy-label">Primary CTA</div>
+          <div class="copy-text small">WhatsApp 083 474 4343</div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-label">Secondary CTA</div>
+          <div class="copy-text small">View catalogue →</div>
+        </div>
+      </div>
+      <div class="note"><strong>Why this works:</strong> Prices upfront (Hopkins — buyers want this first), Taurus credential with a specific number (20 years), real client types named. Ends on the job to be done: "need their gear sorted."</div>
+    </div>
+  </div>
+
+  <!-- Trust strip -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Trust strip (4 panels)</span>
+      <span class="section-status status-proposed">Proposed update</span>
+    </div>
+    <div class="section-body">
+      <div class="two-col">
+        <div class="copy-block">
+          <div class="copy-label">Panel 1 — no change</div>
+          <div class="copy-text small"><strong>Triple stitched</strong><br>Built for repeat wash, wear and work.</div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-label">Panel 2 — no change</div>
+          <div class="copy-text small"><strong>All crew sizes</strong><br>Core lines cover the popular sizes teams need.</div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-label">Panel 3 — update</div>
+          <div class="copy-text small"><strong>Taurus Workwear group</strong><br>20 years supplying South African businesses. The stock, pricing and supplier relationships are in place.</div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-label">Panel 4 — no change</div>
+          <div class="copy-text small"><strong>Nationwide delivery</strong><br>Quote, pack and dispatch for bulk orders.</div>
+        </div>
+      </div>
+      <div class="note"><strong>Panel 3:</strong> Previous draft said "now available locally in Durban" — weak ending. Updated to say what 20 years actually means: stock, pricing, relationships already exist. Buyers care about that.</div>
+    </div>
+  </div>
+
+  <!-- TuffBlock featured product -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Featured product block (Econo Conti Suit)</span>
+      <span class="section-status status-current">Already updated in code</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Subtitle</div>
+        <div class="copy-text">195gsm poly cotton. Triple stitched where it counts. 8 colours, sizes 30 to 56, all at R149.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Feature bullets</div>
+        <ul class="copy-list">
+          <li>195gsm poly cotton for daily site wear</li>
+          <li>Triple stitched back rise and inside leg</li>
+          <li>Bar tacked at every stress point</li>
+          <li>8 colours from size 30 to 56, one price</li>
+        </ul>
+      </div>
+      <div class="note"><strong>Hopkins check:</strong> Every bullet is a provable spec. No empty claims. Good.</div>
+    </div>
+  </div>
+
+  <!-- How to order -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">How to order (5 steps)</span>
+      <span class="section-status status-current">No change needed</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading" style="font-size:18px">No checkout. No confusion.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Steps</div>
+        <ul class="copy-list">
+          <li>Pick your category</li>
+          <li>Send product codes</li>
+          <li>Confirm sizes and colours</li>
+          <li>Approve the quote</li>
+          <li>Collect or dispatch</li>
+        </ul>
+      </div>
+      <div class="note"><strong>Note:</strong> "No checkout. No confusion." reads as two parallel negatives — but here it's functional information (telling them how the process works), not a rhetorical reframe. Keep it.</div>
+    </div>
+  </div>
+
+  <!-- Contact bar -->
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Contact bar (bottom of homepage)</span>
+      <span class="section-status status-proposed">Proposed update</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">Ready for a quote?</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading" style="font-size:18px">Send sizes, colours and quantities. We come back within a business day.</div>
+      </div>
+      <div class="note"><strong>Changed:</strong> "We will come back fast" → "We come back within a business day." — Hopkins specificity without overpromising. Accurate for a small team that doesn't work evenings and weekends.</div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ─── ABOUT ──────────────────────────────────────────────────── -->
+<div class="page-block" id="about">
+  <div class="page-header">
+    <span class="page-tag">Page</span>
+    <span class="page-title">About</span>
+    <span class="page-url">/about</span>
+  </div>
+
+  <div class="strategy-bar">
+    <strong>Copy strategy:</strong> Person landing here wants to know: is this supplier the real deal, how long have they been around, can I trust them with a bulk order? Meet that question directly. Lead with credentials (Taurus, 20 years). Then the range. Then the client types. Close on process — how easy it is to deal with us. Collier: enter their evaluative mindset, not a brand story mindset.
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Page metadata</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Meta description</div>
+        <div class="copy-text small">Tuff Workwear is Taurus Workwear's Durban operation. 20 years of workwear supply to mines, factories, contractors and small businesses across South Africa.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Intro / who we are</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">Who we are</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">Taurus Workwear's Durban base.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Tuff Workwear is Taurus Workwear's Durban operation. Taurus has been in the workwear trade for over 20 years — supplying mines, construction crews, food processing plants, garden services and local businesses across South Africa.<br><br>We bring that stock, those supplier relationships and 20 years of trade experience to Durban. You deal with us directly.</div>
+      </div>
+      <div class="note"><strong>Ogilvy check:</strong> Specific credential (20 years), real client types named, honest about the structure (distributor of Taurus). Respects the reader's intelligence — doesn't oversell.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">The product range</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">The range</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">Vulcan Workwear. SABS approved.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Our gear comes from Vulcan Workwear — a South African manufacturer with decades of technical workwear heritage and SABS-approved production.<br><br>Conti suits from econo to premium, safety boots, hi-viz worksuits, rain gear, freezer wear and branded apparel. For SABS flame and acid suits or specialist protective clothing, call us — some lines need a proper conversation before we confirm stock.</div>
+      </div>
+      <div class="note"><strong>Hopkins preemptive claim:</strong> "SABS approved" and "South African manufacturer" are credibility points every competitor either skips or buries. Lead with them.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Who we serve</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">Our clients</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">Mining companies to the corner butcher.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Our clients cover the full range of South African working environments. Mining operations ordering bulk safety gear. Construction contractors kitting out a crew before a big job. Garden services sorting their team before the summer rush. Local butchers and food businesses that need protective clothing for staff.<br><br>Most lines run at MOQ 10. Some go lower. Ask us.</div>
+      </div>
+      <div class="note"><strong>Caples / specificity:</strong> The heading "Mining companies to the corner butcher" is concrete and memorable — it creates an immediate mental picture of the breadth of clients. Keep it exactly as is.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Personal service / how it works</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">How it works</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">One call. Within a business day.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">WhatsApp or call 083 474 4343. You get a person who knows the stock and can confirm sizes, colours and availability on the spot.<br><br>Bulk orders get a freight quote to anywhere in the country. We take enquiries anytime and respond during business hours.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Contact close</div>
+        <div class="copy-text small">89 Daintree Avenue, Durban · 083 474 4343 · sales@tuffworkwear.co.za</div>
+      </div>
+      <div class="flag"><strong>Previous draft had:</strong> "No online checkout. No automated responses. Just someone who knows the product..." — these "No X" constructions are banned-pattern adjacent. Replaced with a positive, direct description of what actually happens when you call.</div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ─── CONTACT ────────────────────────────────────────────────── -->
+<div class="page-block" id="contact">
+  <div class="page-header">
+    <span class="page-tag">Page</span>
+    <span class="page-title">Contact</span>
+    <span class="page-url">/contact</span>
+  </div>
+
+  <div class="strategy-bar">
+    <strong>Copy strategy:</strong> Functional page. The buyer who's on the contact page has already decided to reach out. Keep it short. Tell them what happens when they do. Don't waste their time with copy they don't need.
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Page metadata</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Meta description</div>
+        <div class="copy-text small">Call or WhatsApp Tuff Workwear on 083 474 4343. Based at 89 Daintree Avenue, Durban. Nationwide courier on bulk orders.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Intro</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">Get hold of us.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">WhatsApp or call 083 474 4343. You'll get a response from someone who knows the stock.<br><br>Send sizes, quantities and colours. We confirm availability and come back with a quote. Bulk orders include a freight quote to anywhere in the country. We take enquiries anytime and respond during business hours.</div>
+      </div>
+      <div class="flag"><strong>Previous draft opened with:</strong> "Real people, not a call centre." — direct negative parallelism. Removed. The copy now just says what happens: you call, you get a person who knows the stock. That's the whole point, stated plainly.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Contact details</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="two-col">
+        <div class="copy-block">
+          <div class="copy-label">Phone / WhatsApp</div>
+          <div class="copy-text small">083 474 4343</div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-label">Email</div>
+          <div class="copy-text small">sales@tuffworkwear.co.za <em>(confirm before launch)</em></div>
+        </div>
+        <div class="copy-block">
+          <div class="copy-label">Address</div>
+          <div class="copy-text small">89 Daintree Avenue, Durban</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ─── BRANDING ───────────────────────────────────────────────── -->
+<div class="page-block" id="branding">
+  <div class="page-header">
+    <span class="page-tag">Page</span>
+    <span class="page-title">Branding services</span>
+    <span class="page-url">/branding</span>
+  </div>
+
+  <div class="strategy-bar">
+    <strong>Copy strategy:</strong> Buyer is likely already ordering stock and considering adding branding. Lead with the practical case (low cost per unit, professional result). Then what's possible. Then turnaround. Close with the action — WhatsApp. No selling needed here, just clear information.
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Intro</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">Branding services</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">Put your name where the work happens.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Screen printing and embroidery on most lines we stock. If you're already ordering 10 or more garments, branding is worth adding — the cost per unit is low and the result looks professional on site.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">What we can brand</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Conti suits, golfers, t-shirts and jackets. Most Vicbay apparel takes embroidery well. For larger runs, screen printing is available on select garments. If you're unsure what works on a specific item, ask — we'll tell you straight.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Turnaround and how to order</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Unbranded stock ships fast. Branded orders run 5 to 10 working days depending on quantities and technique. We confirm the timeline before you commit.<br><br>WhatsApp us with the product, quantities and your logo file. We'll come back with what's possible and what it costs.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ─── BULK ORDERS ────────────────────────────────────────────── -->
+<div class="page-block" id="bulk">
+  <div class="page-header">
+    <span class="page-tag">Page</span>
+    <span class="page-title">Bulk orders</span>
+    <span class="page-url">/bulk-orders</span>
+  </div>
+
+  <div class="strategy-bar">
+    <strong>Copy strategy:</strong> Buyer here is likely a procurement officer or operations manager. They care about volume pricing, reliability, and lead times. Give them specifics (MOQ 10, freight included, factory lead times for large runs). Close with the action.
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Intro</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Eyebrow</div>
+        <div class="copy-text eyebrow">Volume pricing</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Heading</div>
+        <div class="copy-text heading">Kit out the whole crew.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">Most lines run at MOQ 10. Larger orders get better freight terms and we can work directly with the factory on lead times for very large runs.<br><br>We work with mining companies, construction firms, cleaning services, food processors and hospitality groups. If you kit out 20 or more people regularly, talk to us about an ongoing supply arrangement.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">How it works</span>
+      <span class="section-status status-new">New page</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Body</div>
+        <div class="copy-text">WhatsApp or call with your product list, quantities, sizes and colours. We check stock, confirm a quote and arrange delivery. Nationwide courier on all bulk orders — freight is included in the quote.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ─── META & SEO ─────────────────────────────────────────────── -->
+<div class="page-block" id="meta">
+  <div class="page-header">
+    <span class="page-tag">Global</span>
+    <span class="page-title">Meta &amp; SEO</span>
+    <span class="page-url">layout.tsx</span>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Site-level metadata</span>
+      <span class="section-status status-proposed">Proposed update</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Default title</div>
+        <div class="copy-text small">Tuff Workwear · Conti suits, boots and workwear from Durban</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Meta description</div>
+        <div class="copy-text small">Tuff Workwear is Taurus Workwear's Durban base. Conti suits from R149, safety boots, hi-viz and branded workwear. WhatsApp 083 474 4343 for stock and pricing.</div>
+      </div>
+      <div class="note"><strong>Updated:</strong> Names Taurus, includes price anchor (R149), includes phone number. Specific beats generic in search results too.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Confirm before launch</span>
+      <span class="section-status status-new">Action needed</span>
+    </div>
+    <div class="section-body">
+      <ul class="copy-list">
+        <li>Is sales@tuffworkwear.co.za live and checked?</li>
+        <li>Is tuffworkwear.co.za registered and pointed at hosting?</li>
+        <li>✓ Response time confirmed: "within a business day"</li>
+        <li>Food industry lines (butchers, food processing) — do you stock these directly or refer to Taurus?</li>
+        <li>Is MOQ really 10 across the board, or does it vary by line?</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ─── IMAGE PLAN ─────────────────────────────────────────────── -->
+<div class="page-block" id="images">
+  <div class="page-header">
+    <span class="page-tag">Assets</span>
+    <span class="page-title">Pexels image plan</span>
+    <span class="page-url">Website/public/images/</span>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Sourcing notes</span>
+      <span class="section-status status-new">Pending copy approval</span>
+    </div>
+    <div class="section-body">
+      <div class="note">All stock images sourced from Pexels, downloaded and saved to <code>Website/public/images/</code> before being referenced in code. Product images always use the real supplier photos. Pexels fills atmosphere and layout slots only.</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <span class="section-label">Image slots by page</span>
+      <span class="section-status status-new">Pending copy approval</span>
+    </div>
+    <div class="section-body">
+      <div class="copy-block">
+        <div class="copy-label">Homepage hero — right panel (atmosphere)</div>
+        <div class="copy-text small">Workers in conti suits on a site or in a factory. Dark industrial setting, charcoal tones. Should read well over the orange/dark palette. Search: "construction workers safety gear" or "factory workers overalls".</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">About page — intro visual</div>
+        <div class="copy-text small">Crew or team in workwear — mixed trades, shows scale. Search: "workwear team" or "industrial workers group".</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">About page — "who we serve" section</div>
+        <div class="copy-text small">2 to 3 small photos to illustrate client range: construction/site, food industry worker, garden/outdoor service crew. Search individually per environment.</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Branding page</div>
+        <div class="copy-text small">Close-up of embroidery on a garment or a finished branded polo/jacket. Search: "embroidery shirt" or "branded workwear".</div>
+      </div>
+      <div class="copy-block">
+        <div class="copy-label">Contact page</div>
+        <div class="copy-text small">Skip the stock photo — a clean map embed or just the address block on charcoal will work better than a generic city shot.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div><!-- /container -->
+
+<script>
+  const sections = document.querySelectorAll('.page-block');
+  const links = document.querySelectorAll('.nav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const id = e.target.id;
+        links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+      }
+    });
+  }, { threshold: 0.2 });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--surface-page);
+  --color-foreground: var(--text-primary);
+  --color-card: var(--surface-raised);
+  --color-card-foreground: var(--text-primary);
+  --color-popover: var(--surface-raised);
+  --color-popover-foreground: var(--text-primary);
+  --color-primary: var(--brand-orange);
+  --color-primary-foreground: var(--brand-white);
+  --color-secondary: var(--neutral-100);
+  --color-secondary-foreground: var(--neutral-900);
+  --color-muted: var(--neutral-100);
+  --color-muted-foreground: var(--neutral-500);
+  --color-accent: var(--orange-100);
+  --color-accent-foreground: var(--orange-800);
+  --color-destructive: var(--danger-500);
+  --color-destructive-foreground: var(--brand-white);
+  --color-border: var(--border-subtle);
+  --color-input: var(--border-strong);
+  --color-ring: var(--ring-focus);
+
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-white: var(--brand-white);
+  --color-brand-grey: var(--brand-grey);
+  --color-brand-black: var(--brand-black);
+  --color-orange-50: var(--orange-50);
+  --color-orange-100: var(--orange-100);
+  --color-orange-300: var(--orange-300);
+  --color-orange-500: var(--orange-500);
+  --color-orange-600: var(--orange-600);
+  --color-orange-700: var(--orange-700);
+  --color-orange-800: var(--orange-800);
+
+  --font-display: var(--font-archivo);
+  --font-sans: var(--font-inter);
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --shadow-glow-orange: 0 0 24px rgba(232, 97, 26, 0.45);
+}
+
+:root {
+  --brand-charcoal: #2d2d2d;
+  --brand-orange: #e8611a;
+  --brand-white: #ffffff;
+  --brand-grey: #b0b0b0;
+  --brand-black: #111111;
+
+  --neutral-50: #f7f7f7;
+  --neutral-100: #ededed;
+  --neutral-200: #d9d9d9;
+  --neutral-300: #b0b0b0;
+  --neutral-400: #8a8a8a;
+  --neutral-500: #6b6b6b;
+  --neutral-600: #4a4a4a;
+  --neutral-700: #2d2d2d;
+  --neutral-800: #1f1f1f;
+  --neutral-900: #111111;
+
+  --orange-50: #fff2ea;
+  --orange-100: #fcdbc4;
+  --orange-300: #f19661;
+  --orange-500: #e8611a;
+  --orange-600: #ce521a;
+  --orange-700: #a53f0f;
+  --orange-800: #7c2e08;
+
+  --success-500: #2e8e4a;
+  --success-50: #e5f4ea;
+  --warning-500: #c18a00;
+  --warning-50: #fbf1d9;
+  --danger-500: #b83a2b;
+  --danger-50: #f7e1dd;
+
+  --surface-page: var(--brand-white);
+  --surface-raised: var(--brand-white);
+  --surface-inverse: var(--neutral-900);
+  --text-primary: var(--neutral-900);
+  --text-secondary: var(--neutral-500);
+  --border-subtle: var(--neutral-200);
+  --border-strong: var(--neutral-400);
+  --ring-focus: var(--orange-500);
+}
+
+* {
+  border-color: var(--border-subtle);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 0%, rgba(232, 97, 26, 0.08), transparent 28rem),
+    linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+::selection {
+  background-color: var(--brand-orange);
+  color: var(--brand-white);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring-focus);
+  outline-offset: 2px;
+}
+
+.tuff-rule {
+  display: block;
+  height: 4px;
+  width: min(100%, 20rem);
+  background: var(--brand-orange);
+}
+
+.eyebrow {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.price-emphasis {
+  color: var(--brand-white);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  text-shadow: var(--shadow-glow-orange);
+}
+
+.price-emphasis-light {
+  color: var(--orange-700);
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+}
+
+.industrial-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
