@@ -10,7 +10,9 @@ export type Product = {
   moq: string;
   colours: string[];
   image?: string;
+  images?: string[];
   badge?: string;
+  additionalInfo?: { label: string; value: string }[];
 };
 
 export const categories = [
@@ -63,6 +65,15 @@ export const featuredProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#22334a", "#1a1a1a", "#1a3c8a", "#1a6b3c", "#9e9e9e", "#8c7d62", "#c0392b", "#e8611a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ROYAL-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-BLACK-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-GREY-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-EMERALD-GREEN-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ORANGE-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-RED-700x933.jpg",
+    ],
     badge: "Best seller",
   },
   {
@@ -71,10 +82,19 @@ export const featuredProducts: Product[] = [
     name: "Premium Conti Suit",
     slug: "conti-suits/premium-conti-suit",
     spec: "80/20 poly cotton · pen pocket · press stud jacket · sizes 30 to 56",
-    price: "R198.75",
+    price: "R225.00",
     moq: "MOQ 10",
     colours: ["#9e9e9e", "#1a3c8a", "#c0392b", "#1a1a1a", "#22334a", "#1a6b3c", "#6b7c5a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-ROYAL-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-RED-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/11_030_Black-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/6535-NAVY-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/EMERALD-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/OLIVE-700x933.png",
+    ],
   },
   {
     id: "HIVIZ-6535-TWOTONE",
@@ -137,7 +157,25 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#22334a", "#1a1a1a", "#1a3c8a", "#1a6b3c", "#9e9e9e", "#8c7d62", "#c0392b", "#e8611a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ROYAL-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-BLACK-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-GREY-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-EMERALD-GREEN-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ORANGE-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-RED-700x933.jpg",
+    ],
     badge: "Best seller",
+    additionalInfo: [
+      { label: "Fabric type", value: "195gsm polycotton" },
+      { label: "Sizes", value: "30 – 56" },
+      { label: "Garment type", value: "Suit (jacket and trousers)" },
+      { label: "Production", value: "South Africa" },
+      { label: "Flame-retardant", value: "No" },
+      { label: "Acid-proof", value: "No" },
+      { label: "Approved by", value: "Proudly South African" },
+    ],
   },
   {
     id: "ECONO-195-REFLECTIVE",
@@ -148,7 +186,23 @@ export const allProducts: Product[] = [
     price: "R175.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a1a1a", "#1a3c8a", "#1a6b3c", "#9e9e9e", "#8c7d62", "#c0392b", "#e8611a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ROYAL-700x933.jpg",
+    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-NAVY-TAPE-700x933.png",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-NAVY-TAPE-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-BLACK-REFLECTIVE-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-EG-REFLECT-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/43_010_REF-700x933.jpg",
+    ],
+    additionalInfo: [
+      { label: "Fabric type", value: "195gsm polycotton" },
+      { label: "Sizes", value: "30 – 56" },
+      { label: "Garment type", value: "Suit (jacket and trousers)" },
+      { label: "Production", value: "South Africa" },
+      { label: "Reflective tape", value: "On forearms and shins" },
+      { label: "Flame-retardant", value: "No" },
+      { label: "Acid-proof", value: "No" },
+      { label: "Approved by", value: "Proudly South African" },
+    ],
   },
   {
     id: "PREMIUM-8020-PLAIN",
@@ -156,10 +210,28 @@ export const allProducts: Product[] = [
     name: "Premium Conti Suit",
     slug: "conti-suits/premium-conti-suit",
     spec: "80/20 poly cotton · pen pocket and press stud on jacket · triple stitched · sizes 30 to 56",
-    price: "R198.75",
+    price: "R225.00",
     moq: "MOQ 10",
     colours: ["#9e9e9e", "#1a3c8a", "#c0392b", "#1a1a1a", "#22334a", "#1a6b3c", "#6b7c5a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-ROYAL-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-RED-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/11_030_Black-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/6535-NAVY-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/EMERALD-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/OLIVE-700x933.png",
+    ],
+    additionalInfo: [
+      { label: "Fabric type", value: "80/20 polycotton" },
+      { label: "Sizes", value: "26 – 52" },
+      { label: "Garment type", value: "Suit (jacket and trousers)" },
+      { label: "Production", value: "South Africa" },
+      { label: "Flame-retardant", value: "No" },
+      { label: "Acid-proof", value: "No" },
+      { label: "Approved by", value: "YKK · Proudly South African" },
+    ],
   },
   {
     id: "PREMIUM-8020-REFLECTIVE",
@@ -167,10 +239,24 @@ export const allProducts: Product[] = [
     name: "Premium Conti Suit with Reflective Tape",
     slug: "conti-suits/premium-conti-suit-reflective",
     spec: "80/20 poly cotton · reflective tape · triple stitched · sizes 30 to 56",
-    price: "R235.00",
+    price: "R260.00",
     moq: "MOQ 10",
     colours: ["#9e9e9e", "#1a3c8a", "#c0392b", "#1a1a1a", "#22334a", "#1a6b3c"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-ROYAL-700x933.jpg",
+    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/REFLECTIVE-700x933.png",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/REFLECTIVE-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-REFLECTIVE-700x933.png",
+    ],
+    additionalInfo: [
+      { label: "Fabric type", value: "80/20 polycotton" },
+      { label: "Sizes", value: "26 – 52" },
+      { label: "Garment type", value: "Suit (jacket and trousers)" },
+      { label: "Reflective tape", value: "Full arms and legs" },
+      { label: "Production", value: "South Africa" },
+      { label: "Flame-retardant", value: "No" },
+      { label: "Acid-proof", value: "No" },
+      { label: "Approved by", value: "YKK · Proudly South African" },
+    ],
   },
   {
     id: "DENIM-100-COTTON",
@@ -182,6 +268,15 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#3b5175"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/Untitled-design-22-700x933.png",
+    additionalInfo: [
+      { label: "Fabric type", value: "100% cotton denim" },
+      { label: "Sizes", value: "30 – 54" },
+      { label: "Garment type", value: "Conti suit (jacket and trousers)" },
+      { label: "Production", value: "South Africa" },
+      { label: "Flame-retardant", value: "No" },
+      { label: "Acid-proof", value: "No" },
+      { label: "Approved by", value: "YKK · Proudly South African" },
+    ],
   },
   {
     id: "HIVIZ-6535-TWOTONE",
@@ -194,6 +289,16 @@ export const allProducts: Product[] = [
     colours: ["#e8611a", "#22334a", "#c8e020", "#22334a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/HI-VIZ-700x933.jpg",
     badge: "Hi-viz",
+    additionalInfo: [
+      { label: "Fabric type", value: "65/35 polycotton" },
+      { label: "Sizes", value: "28 – 54" },
+      { label: "Garment type", value: "Suit (jacket and trousers)" },
+      { label: "Reflective tape", value: "Across chest, sleeves and legs" },
+      { label: "Production", value: "South Africa" },
+      { label: "Flame-retardant", value: "No" },
+      { label: "Acid-proof", value: "No" },
+      { label: "Approved by", value: "YKK · Proudly South African" },
+    ],
   },
   // Safety boots
   {
@@ -207,6 +312,15 @@ export const allProducts: Product[] = [
     colours: ["#1a1a1a"],
     image: "/kirin-boot.png",
     badge: "NRCS approved",
+    additionalInfo: [
+      { label: "Upper material", value: "Buffalo leather" },
+      { label: "Toe cap", value: "Steel" },
+      { label: "Sole", value: "Anti-slip PU" },
+      { label: "Insole", value: "Cushioned" },
+      { label: "Fastening", value: "Lace-up with 4-pair D-ring eyelets" },
+      { label: "Sizes", value: "3 – 12" },
+      { label: "Approved by", value: "NRCS" },
+    ],
   },
   // Rain & freezer
   {
@@ -219,6 +333,13 @@ export const allProducts: Product[] = [
     moq: "MOQ 5",
     colours: ["#22334a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/35-700x933.png",
+    additionalInfo: [
+      { label: "Fabric type", value: "Rubberised waterproof" },
+      { label: "Garment type", value: "2-piece suit (jacket and trousers)" },
+      { label: "Colour", value: "Navy" },
+      { label: "Seams", value: "Taped" },
+      { label: "Production", value: "South Africa" },
+    ],
   },
   {
     id: "RAIN-RUBBERISED-YELLOW",
@@ -230,6 +351,13 @@ export const allProducts: Product[] = [
     moq: "MOQ 5",
     colours: ["#f5c518"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/34-700x933.png",
+    additionalInfo: [
+      { label: "Fabric type", value: "Rubberised waterproof" },
+      { label: "Garment type", value: "2-piece suit (jacket and trousers)" },
+      { label: "Colour", value: "Yellow" },
+      { label: "Seams", value: "Taped" },
+      { label: "Production", value: "South Africa" },
+    ],
   },
   {
     id: "FREEZER-BELOW-ZERO-JACKET",
@@ -241,6 +369,15 @@ export const allProducts: Product[] = [
     moq: "MOQ 5",
     colours: ["#22334a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/4-1-700x933.png",
+    additionalInfo: [
+      { label: "Outer shell", value: "Oxford nylon" },
+      { label: "Lining", value: "Cotton inner" },
+      { label: "Garment type", value: "Freezer jacket" },
+      { label: "Sizes", value: "S – 4XL" },
+      { label: "Colour", value: "Navy" },
+      { label: "Production", value: "South Africa" },
+      { label: "Approved by", value: "YKK · Proudly South African" },
+    ],
   },
   {
     id: "FREEZER-BELOW-ZERO-PANTS",
@@ -252,6 +389,15 @@ export const allProducts: Product[] = [
     moq: "MOQ 5",
     colours: ["#22334a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/6-700x933.png",
+    additionalInfo: [
+      { label: "Outer shell", value: "Oxford nylon" },
+      { label: "Lining", value: "Cotton inner" },
+      { label: "Garment type", value: "Freezer trousers" },
+      { label: "Sizes", value: "S – 4XL" },
+      { label: "Colour", value: "Navy" },
+      { label: "Production", value: "South Africa" },
+      { label: "Approved by", value: "YKK · Proudly South African" },
+    ],
   },
   // Apparel
   {
@@ -264,6 +410,15 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#7a8c5a", "#c0392b", "#e8a020", "#4a90d9", "#d4c9b0"],
     image: "https://www.vicbay-gp.co.za/web/image/product.product/550/image_1024/%5B7BG31%5D%20Mens%20Polo%20%28Black%2C%20S%29?unique=9f092c2",
+    additionalInfo: [
+      { label: "Fabric type", value: "100% cotton pique" },
+      { label: "Weight", value: "180gsm" },
+      { label: "Sizes", value: "S – 3XL" },
+      { label: "Collar", value: "Rib-knit" },
+      { label: "Placket", value: "2-button tonal" },
+      { label: "Construction", value: "Double stitched sleeves and hem" },
+      { label: "Production", value: "Southern Africa" },
+    ],
   },
   {
     id: "VICBAY-HEAVY-TEE-180",
@@ -275,6 +430,14 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#6b4b2a", "#7a8c5a"],
     image: "https://www.vicbay-gp.co.za/web/image/product.product/308/image_1024/%5B8BG31%5D%20Heavyweight%20T-shirt%20%28Black%2C%20S%29?unique=342b70e",
+    additionalInfo: [
+      { label: "Fabric type", value: "100% combed cotton" },
+      { label: "Weight", value: "180gsm" },
+      { label: "Sizes", value: "S – 6XL" },
+      { label: "Neckline", value: "Crew neck with neck ribbing" },
+      { label: "Construction", value: "Tubular knit · double stitched" },
+      { label: "Production", value: "Southern Africa" },
+    ],
   },
   {
     id: "VICBAY-PLATINUM-TEE-160",
@@ -286,6 +449,14 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#e8611a", "#9e9e9e"],
     image: "https://www.vicbay-gp.co.za/web/image/product.product/689/image_1024/%5B6BG31%5D%20Platinum%20T-shirt%20%28Black%2C%20S%29?unique=1ebc39c",
+    additionalInfo: [
+      { label: "Fabric type", value: "100% ring spun cotton" },
+      { label: "Weight", value: "160gsm" },
+      { label: "Sizes", value: "S – 3XL" },
+      { label: "Neckline", value: "Crew neck" },
+      { label: "Construction", value: "Side seamed · shoulder tape · double stitched" },
+      { label: "Production", value: "Southern Africa" },
+    ],
   },
 ];
 

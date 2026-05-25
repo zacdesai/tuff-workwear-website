@@ -6,7 +6,6 @@ import { HowToOrder } from "@/components/home/how-to-order";
 import { TrustStrip } from "@/components/home/trust-strip";
 import { TuffBlock } from "@/components/home/tuff-block";
 import { featuredProducts } from "@/lib/products";
-import { whatsappHref } from "@/lib/site";
 
 export default function Home() {
   const featured = featuredProducts[0];
@@ -27,12 +26,7 @@ export default function Home() {
         ]}
         price={featured.price}
         image={featured.image}
-        primaryCta={{
-          label: "WhatsApp stock",
-          href: whatsappHref(
-            `Hi Tuff, I'm interested in the ${featured.name} (${featured.price}). Can you send stock availability?`,
-          ),
-        }}
+        product={featured}
         secondaryCta={{
           label: "View details",
           href: `/catalogue/${featured.slug}`,

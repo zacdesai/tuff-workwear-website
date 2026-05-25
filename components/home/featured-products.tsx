@@ -8,7 +8,7 @@ export function FeaturedProducts() {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div className="max-w-2xl">
             <p className="eyebrow">Fast-moving lines</p>
-            <h2 className="mt-3 text-4xl uppercase sm:text-5xl">Prices buyers can read.</h2>
+            <h2 className="mt-3 text-4xl uppercase sm:text-5xl">Priced For Business.</h2>
             <span className="tuff-rule mt-4" />
           </div>
           <p className="max-w-sm text-sm text-neutral-500">

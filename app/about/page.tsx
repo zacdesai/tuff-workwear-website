@@ -35,8 +35,8 @@ export default function AboutPage() {
           </div>
           <div className="relative min-h-[22rem] overflow-hidden">
             <img
-              src="/images/about-team.jpg"
-              alt="Tuff Workwear team in safety gear"
+              src="/images/about-worker.jpg"
+              alt="Worker in safety gear"
               className="absolute inset-0 h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-brand-charcoal/30" />

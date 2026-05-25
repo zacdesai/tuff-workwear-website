@@ -10,10 +10,12 @@ import type { Product } from "@/lib/products";
 export function AddToEnquiryButton({
   product,
   size = "sm",
+  variant = "primary",
   className,
 }: {
   product: Product;
   size?: "sm" | "lg" | "xl";
+  variant?: "primary" | "secondary";
   className?: string;
 }) {
   const { addItem, items } = useEnquiry();
@@ -29,7 +31,7 @@ export function AddToEnquiryButton({
   return (
     <Button
       size={size}
-      variant="secondary"
+      variant={variant}
       onClick={handleClick}
       disabled={isInList}
       className={className}

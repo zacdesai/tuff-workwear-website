@@ -2,6 +2,8 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { AddToEnquiryButton } from "@/components/home/add-to-enquiry-button";
+import type { Product } from "@/lib/products";
 
 type TuffBlockProps = {
   eyebrow: string;
@@ -10,7 +12,8 @@ type TuffBlockProps = {
   features: string[];
   price: string;
   image?: string;
-  primaryCta: { label: string; href: string };
+  product?: Product;
+  primaryCta?: { label: string; href: string };
   secondaryCta: { label: string; href: string };
   badge?: string;
 };
@@ -22,6 +25,7 @@ export function TuffBlock({
   features,
   price,
   image,
+  product,
   primaryCta,
   secondaryCta,
   badge = "Best value",
@@ -42,9 +46,9 @@ export function TuffBlock({
             {badge}
           </div>
           <div className="absolute inset-x-10 bottom-10 rounded-sm border border-white/10 bg-white/[0.08] p-6 backdrop-blur-sm">
-            <p className="text-xs font-bold uppercase tracking-[0.16em] text-neutral-300">
+            <span className="inline-block bg-brand-orange px-2 py-0.5 text-xs font-bold uppercase tracking-[0.14em] text-white">
               Featured line
-            </p>
+            </span>
             <p className="price-emphasis mt-3 text-5xl">{price}</p>
             <p className="mt-2 text-sm text-neutral-300">bulk pricing from MOQ 10</p>
           </div>
@@ -66,9 +70,13 @@ export function TuffBlock({
           </ul>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg" variant="primary">
-              <a href={primaryCta.href}>{primaryCta.label}</a>
-            </Button>
+            {product ? (
+              <AddToEnquiryButton product={product} size="lg" className="sm:w-auto" />
+            ) : primaryCta ? (
+              <Button asChild size="lg" variant="primary">
+                <a href={primaryCta.href}>{primaryCta.label}</a>
+              </Button>
+            ) : null}
             <Button asChild size="lg" variant="outlineDark">
               <Link href={secondaryCta.href}>
                 {secondaryCta.label}

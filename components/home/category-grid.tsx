@@ -11,7 +11,7 @@ export function CategoryGrid() {
           <h2 className="mt-3 text-4xl uppercase sm:text-5xl">Workwear by the job.</h2>
           <span className="tuff-rule mt-4" />
           <p className="mt-5 text-neutral-500">
-            Start with the crew, the site and the risk. The catalogue keeps the first buy simple.
+            Start with the crew, the site and the job. Our catalogue makes the choice simple.
           </p>
         </div>
 

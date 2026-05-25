@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { AddToEnquiryButton } from "@/components/home/add-to-enquiry-button";
+import { ImageGallery } from "@/components/catalogue/image-gallery";
 import { ProductCard } from "@/components/home/product-card";
 import { allProducts, categories } from "@/lib/products";
 import { whatsappHref } from "@/lib/site";
@@ -118,23 +119,27 @@ function ProductDetailPage({ product }: { product: (typeof allProducts)[number] 
       <section className="bg-white py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-12 lg:grid-cols-[1fr_1fr]">
-            {/* Image */}
-            <div className="relative aspect-[4/5] overflow-hidden bg-neutral-100">
-              {product.image ? (
+            {/* Image / gallery */}
+            {product.images && product.images.length > 0 ? (
+              <ImageGallery images={product.images} alt={product.name} badge={product.badge} />
+            ) : product.image ? (
+              <div className="relative aspect-[4/5] overflow-hidden bg-neutral-100">
                 <img
                   src={product.image}
                   alt={product.name}
                   className="absolute inset-0 h-full w-full object-cover object-top"
                 />
-              ) : (
+                {product.badge && (
+                  <span className="absolute left-4 top-4 bg-brand-charcoal px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-white">
+                    {product.badge}
+                  </span>
+                )}
+              </div>
+            ) : (
+              <div className="relative aspect-[4/5] overflow-hidden bg-neutral-100">
                 <div className="absolute inset-8 bg-gradient-to-br from-neutral-300 via-white to-neutral-200" />
-              )}
-              {product.badge && (
-                <span className="absolute left-4 top-4 bg-brand-charcoal px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-white">
-                  {product.badge}
-                </span>
-              )}
-            </div>
+              </div>
+            )}
 
             {/* Details */}
             <div className="flex flex-col">
@@ -190,6 +195,26 @@ function ProductDetailPage({ product }: { product: (typeof allProducts)[number] 
           </div>
         </div>
       </section>
+
+      {/* Additional information */}
+      {product.additionalInfo && product.additionalInfo.length > 0 && (
+        <section className="border-t border-neutral-200 bg-white py-12 lg:py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl uppercase">Additional information</h2>
+            <span className="tuff-rule mt-4" />
+            <dl className="mt-8 divide-y divide-neutral-100 border border-neutral-200">
+              {product.additionalInfo.map(({ label, value }) => (
+                <div key={label} className="flex gap-8 px-5 py-3">
+                  <dt className="w-44 shrink-0 text-xs font-bold uppercase tracking-[0.12em] text-neutral-400 pt-0.5">
+                    {label}
+                  </dt>
+                  <dd className="text-sm text-neutral-800">{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      )}
     </>
   );
 }

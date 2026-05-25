@@ -17,38 +17,47 @@ export default function BulkOrdersPage() {
       {/* Intro */}
       <section className="bg-brand-charcoal py-16 text-white lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <p className="eyebrow text-neutral-300">Volume pricing</p>
-            <h1 className="mt-5 text-5xl uppercase sm:text-6xl">
-              Kit out the whole crew.
-            </h1>
-            <span className="tuff-rule mt-6" />
-            <p className="mt-7 text-lg text-neutral-200">
-              Most lines run at MOQ 10. Larger orders get better freight terms and we can
-              work directly with the factory on lead times for very large runs.
-            </p>
-            <p className="mt-4 text-lg text-neutral-200">
-              We work with mining companies, construction firms, cleaning services, food
-              processors and hospitality groups. If you kit out 20 or more people
-              regularly, talk to us about an ongoing supply arrangement.
-            </p>
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <Button asChild size="xl" variant="whatsapp">
-                <a
-                  href={whatsappHref(
-                    "Hi Tuff, I need a bulk order quote. Can you help?",
-                  )}
-                >
-                  <MessageCircle className="size-5" aria-hidden="true" />
-                  WhatsApp a quote request
-                </a>
-              </Button>
-              <Button asChild size="xl" variant="inverse">
-                <a href={siteConfig.phoneHref}>
-                  <Phone className="size-5" aria-hidden="true" />
-                  Call {siteConfig.phoneDisplay}
-                </a>
-              </Button>
+          <div className="grid gap-12 lg:grid-cols-[1fr_auto] lg:items-start">
+            <div className="max-w-3xl">
+              <p className="eyebrow text-neutral-300">Volume pricing</p>
+              <h1 className="mt-5 text-5xl uppercase sm:text-6xl">
+                Kit out the whole crew.
+              </h1>
+              <span className="tuff-rule mt-6" />
+              <p className="mt-7 text-lg text-neutral-200">
+                Most lines run at MOQ 10. Larger orders get better freight terms and we can
+                work directly with the factory on lead times for very large runs.
+              </p>
+              <p className="mt-4 text-lg text-neutral-200">
+                We work with mining companies, construction firms, cleaning services, food
+                processors and hospitality groups. If you kit out 20 or more people
+                regularly, talk to us about an ongoing supply arrangement.
+              </p>
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                <Button asChild size="xl" variant="whatsapp">
+                  <a
+                    href={whatsappHref(
+                      "Hi Tuff, I need a bulk order quote. Can you help?",
+                    )}
+                  >
+                    <MessageCircle className="size-5" aria-hidden="true" />
+                    WhatsApp a quote request
+                  </a>
+                </Button>
+                <Button asChild size="xl" variant="inverse">
+                  <a href={siteConfig.phoneHref}>
+                    <Phone className="size-5" aria-hidden="true" />
+                    Call {siteConfig.phoneDisplay}
+                  </a>
+                </Button>
+              </div>
+            </div>
+            <div className="w-full lg:w-80 xl:w-96">
+              <img
+                src="/kit-the-crew.png"
+                alt="Kit out the crew — Tuff Workwear range overview"
+                className="w-full"
+              />
             </div>
           </div>
         </div>
@@ -70,8 +79,7 @@ export default function BulkOrdersPage() {
                 on all bulk orders — freight is included in the quote.
               </p>
               <p className="mt-4 text-lg text-neutral-600">
-                We come back within a business day with availability and pricing. No
-                forms to fill in. No automated responses.
+                We come back within a business day with availability and pricing.
               </p>
             </div>
 

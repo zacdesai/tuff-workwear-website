@@ -46,17 +46,15 @@ export function HomeHero() {
             className="absolute inset-x-8 bottom-0 top-16 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-cover object-top opacity-80"
           />
           <div className="absolute inset-x-0 bottom-12 rounded-sm border border-white/10 bg-white/[0.08] p-6 backdrop-blur-sm">
-            <p className="eyebrow text-neutral-300">Launch specials</p>
-            <div className="mt-4 grid grid-cols-3 gap-3">
-              <HeroPrice label="Conti suits" price="R149.00" />
-              <HeroPrice label="Premium suit" price="R198.75" />
+            <span className="inline-block bg-brand-orange px-2 py-0.5 text-xs font-bold uppercase tracking-[0.14em] text-white">Launch specials</span>
+            <div className="mt-4 grid grid-cols-2 gap-3">
+              <HeroPrice label="Premium suit" price="R225.00" />
               <HeroPrice label="Safety boots" price="R295.00" />
             </div>
           </div>
-          <div className="absolute right-8 top-0 w-48 rounded-full border border-orange-300/40 bg-orange-500/15 px-6 py-8 text-center shadow-glow-orange">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-orange-100">MOQ</p>
-            <p className="mt-1 font-display text-5xl tracking-[-0.08em]">10</p>
-            <p className="text-xs text-orange-100">bulk-ready lines</p>
+          <div className="absolute right-8 top-0 border border-brand-orange/60 bg-brand-orange px-5 py-4 text-center shadow-glow-orange">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-white">Popular combo</p>
+            <p className="mt-1 text-sm text-orange-100">The site starter kit</p>
           </div>
         </div>
       </div>
