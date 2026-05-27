@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo_Black, Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 import "@/app/globals.css";
 import { SiteFooter } from "@/components/site/site-footer";
@@ -45,6 +46,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <main>{children}</main>
           <SiteFooter />
         </EnquiryProvider>
+        <Analytics />
       </body>
     </html>
   );
