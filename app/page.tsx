@@ -6,12 +6,17 @@ import { HowToOrder } from "@/components/home/how-to-order";
 import { TrustStrip } from "@/components/home/trust-strip";
 import { TuffBlock } from "@/components/home/tuff-block";
 import { featuredProducts } from "@/lib/products";
+import { localBusinessJsonLd } from "@/lib/site";
 
 export default function Home() {
   const featured = featuredProducts[0];
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       <HomeHero />
       <TrustStrip />
       <TuffBlock

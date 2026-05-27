@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import { siteConfig, whatsappHref } from "@/lib/site";
+import { localBusinessJsonLd, siteConfig, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -13,6 +13,10 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
       {/* Intro */}
       <section className="bg-brand-charcoal py-16 text-white lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
