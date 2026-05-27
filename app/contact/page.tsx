@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { MapPin, MessageCircle, Phone } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { EnquiryCallout } from "@/components/site/enquiry-callout";
 import { localBusinessJsonLd, siteConfig, whatsappHref } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -85,6 +86,8 @@ export default function ContactPage() {
               lines={[siteConfig.address, "Durban, KwaZulu-Natal"]}
             />
           </div>
+
+          <EnquiryCallout />
 
           <div className="mt-16 border-t border-neutral-200 pt-12">
             <p className="eyebrow">Business hours</p>

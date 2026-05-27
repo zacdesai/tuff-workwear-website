@@ -2,12 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, Phone, X } from "lucide-react";
+import { ClipboardList, Menu, Phone, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { EnquiryCartBadge } from "@/components/site/enquiry-cart-badge";
 import { heroWhatsappHref } from "@/lib/products";
 import { siteConfig } from "@/lib/site";
+import { useEnquiry } from "@/lib/enquiry-context";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -20,6 +21,7 @@ const navItems = [
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { itemCount } = useEnquiry();
 
   return (
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/95 backdrop-blur">
@@ -60,6 +62,18 @@ export function SiteHeader() {
         </div>
 
         <div className="flex items-center gap-2 lg:hidden">
+          {itemCount > 0 && (
+            <Link
+              href="/enquiry"
+              aria-label={`Enquiry list, ${itemCount} item${itemCount !== 1 ? "s" : ""}`}
+              className="relative flex h-9 w-9 items-center justify-center rounded-md bg-neutral-100 text-neutral-700 hover:bg-neutral-200"
+            >
+              <ClipboardList className="size-5" aria-hidden="true" />
+              <span className="absolute -right-1 -top-1 flex h-4 min-w-4 items-center justify-center rounded-full bg-brand-orange px-1 text-[10px] font-black text-white">
+                {itemCount}
+              </span>
+            </Link>
+          )}
           <Button asChild size="icon" variant="whatsapp">
             <a href={heroWhatsappHref} aria-label="WhatsApp Tuff Workwear">
               <Phone className="size-4" aria-hidden="true" />
@@ -83,6 +97,20 @@ export function SiteHeader() {
           aria-label="Mobile navigation"
         >
           <ul className="flex flex-col">
+            {itemCount > 0 && (
+              <li className="border-b border-white/10">
+                <Link
+                  href="/enquiry"
+                  className="flex items-center justify-between px-6 py-4 text-base font-medium text-brand-orange"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <span>Enquiry list</span>
+                  <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-brand-orange px-1 text-[10px] font-black text-white">
+                    {itemCount}
+                  </span>
+                </Link>
+              </li>
+            )}
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
