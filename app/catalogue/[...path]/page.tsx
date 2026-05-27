@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, MessageCircle } from "lucide-react";
@@ -124,10 +125,12 @@ function ProductDetailPage({ product }: { product: (typeof allProducts)[number] 
               <ImageGallery images={product.images} alt={product.name} badge={product.badge} />
             ) : product.image ? (
               <div className="relative aspect-[4/5] overflow-hidden bg-neutral-100">
-                <img
-                  src={product.image}
+                <Image
+                  src={product.image!}
                   alt={product.name}
-                  className="absolute inset-0 h-full w-full object-cover object-top"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover object-top"
                 />
                 {product.badge && (
                   <span className="absolute left-4 top-4 bg-brand-charcoal px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-white">

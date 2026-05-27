@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -25,10 +26,12 @@ export function ImageGallery({
   return (
     <div>
       <div className="group relative aspect-[4/5] overflow-hidden bg-neutral-100">
-        <img
+        <Image
           src={images[selected]}
           alt={alt}
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          fill
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          className="object-cover object-top"
         />
         {badge && (
           <span className="absolute left-4 top-4 bg-brand-charcoal px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-white">
@@ -69,10 +72,12 @@ export function ImageGallery({
                   : "border-transparent hover:border-neutral-300"
               }`}
             >
-              <img
+              <Image
                 src={src}
                 alt={`${alt} — colour ${i + 1}`}
-                className="h-16 w-12 object-cover object-top"
+                width={48}
+                height={64}
+                className="object-cover object-top"
               />
             </button>
           ))}

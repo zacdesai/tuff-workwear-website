@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -12,10 +13,12 @@ export function ProductCard({ product }: { product: Product }) {
       <Link href={productHref} tabIndex={-1} aria-hidden="true">
         <div className="relative aspect-[4/5] overflow-hidden bg-neutral-100">
           {product.image ? (
-            <img
+            <Image
               src={product.image}
               alt={product.name}
-              className="absolute inset-0 h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
             />
           ) : (
             <div className="absolute inset-6 bg-gradient-to-br from-neutral-300 via-white to-neutral-200 transition-transform duration-300 group-hover:scale-105" />

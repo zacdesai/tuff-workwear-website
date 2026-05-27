@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
@@ -40,11 +41,16 @@ export function HomeHero() {
 
         <div className="relative min-h-[28rem]">
           <div className="absolute inset-x-8 bottom-0 top-16 rotate-[-3deg] border-2 border-white/15 bg-neutral-900 shadow-2xl" />
-          <img
-            src="https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg"
-            alt="Premium Conti Suit"
-            className="absolute inset-x-8 bottom-0 top-16 h-[calc(100%-4rem)] w-[calc(100%-4rem)] object-cover object-top opacity-80"
-          />
+          <div className="absolute inset-x-8 bottom-0 top-16">
+            <Image
+              src="https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg"
+              alt="Premium Conti Suit"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover object-top opacity-80"
+            />
+          </div>
           <div className="absolute inset-x-0 bottom-12 rounded-sm border border-white/10 bg-white/[0.08] p-6 backdrop-blur-sm">
             <span className="inline-block bg-brand-orange px-2 py-0.5 text-xs font-bold uppercase tracking-[0.14em] text-white">Launch specials</span>
             <div className="mt-4 grid grid-cols-2 gap-3">
