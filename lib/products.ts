@@ -311,6 +311,14 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a"],
     image: "/kirin-boot.png",
+    images: [
+      "/kirin-boot.png",
+      "/kirin-boot-2.jpg",
+      "/kirin-boot-3.jpg",
+      "/kirin-boot-4.jpg",
+      "/kirin-boot-5.jpg",
+      "/kirin-boot-6.jpg",
+    ],
     badge: "NRCS approved",
     additionalInfo: [
       { label: "Upper material", value: "Buffalo leather" },
@@ -410,6 +418,23 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#7a8c5a", "#c0392b", "#e8a020", "#4a90d9", "#d4c9b0"],
     image: "https://www.vicbay-gp.co.za/web/image/product.product/550/image_1024/%5B7BG31%5D%20Mens%20Polo%20%28Black%2C%20S%29?unique=9f092c2",
+    images: [
+      "https://www.vicbay-gp.co.za/web/image/product.product/550/image_1024/", // Black
+      "https://www.vicbay-gp.co.za/web/image/product.product/556/image_1024/", // White
+      "https://www.vicbay-gp.co.za/web/image/product.product/562/image_1024/", // Navy
+      "https://www.vicbay-gp.co.za/web/image/product.product/568/image_1024/", // Grey
+      "https://www.vicbay-gp.co.za/web/image/product.product/574/image_1024/", // Royal Blue
+      "https://www.vicbay-gp.co.za/web/image/product.product/580/image_1024/", // Sky Blue
+      "https://www.vicbay-gp.co.za/web/image/product.product/586/image_1024/", // Bottle Green
+      "https://www.vicbay-gp.co.za/web/image/product.product/592/image_1024/", // Lime Green
+      "https://www.vicbay-gp.co.za/web/image/product.product/598/image_1024/", // Khaki
+      "https://www.vicbay-gp.co.za/web/image/product.product/604/image_1024/", // Pink
+      "https://www.vicbay-gp.co.za/web/image/product.product/610/image_1024/", // Yellow
+      "https://www.vicbay-gp.co.za/web/image/product.product/616/image_1024/", // Orange
+      "https://www.vicbay-gp.co.za/web/image/product.product/622/image_1024/", // Red
+      "https://www.vicbay-gp.co.za/web/image/product.image/836/image_1024/",   // Back
+      "https://www.vicbay-gp.co.za/web/image/product.image/944/image_1024/",   // Back 2
+    ],
     additionalInfo: [
       { label: "Fabric type", value: "100% cotton pique" },
       { label: "Weight", value: "180gsm" },
@@ -430,6 +455,17 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#6b4b2a", "#7a8c5a"],
     image: "https://www.vicbay-gp.co.za/web/image/product.product/308/image_1024/%5B8BG31%5D%20Heavyweight%20T-shirt%20%28Black%2C%20S%29?unique=342b70e",
+    images: [
+      "https://www.vicbay-gp.co.za/web/image/product.product/308/image_1024/", // Black
+      "https://www.vicbay-gp.co.za/web/image/product.product/316/image_1024/", // White
+      "https://www.vicbay-gp.co.za/web/image/product.product/324/image_1024/", // Navy
+      "https://www.vicbay-gp.co.za/web/image/product.product/332/image_1024/", // Sky Blue
+      "https://www.vicbay-gp.co.za/web/image/product.product/340/image_1024/", // Purple
+      "https://www.vicbay-gp.co.za/web/image/product.product/348/image_1024/", // Pink
+      "https://www.vicbay-gp.co.za/web/image/product.product/356/image_1024/", // Brown
+      "https://www.vicbay-gp.co.za/web/image/product.product/364/image_1024/", // Stone
+      "https://www.vicbay-gp.co.za/web/image/product.image/354/image_1024/",   // Back
+    ],
     additionalInfo: [
       { label: "Fabric type", value: "100% combed cotton" },
       { label: "Weight", value: "180gsm" },
@@ -449,6 +485,15 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#e8611a", "#9e9e9e"],
     image: "https://www.vicbay-gp.co.za/web/image/product.product/689/image_1024/%5B6BG31%5D%20Platinum%20T-shirt%20%28Black%2C%20S%29?unique=1ebc39c",
+    images: [
+      "https://www.vicbay-gp.co.za/web/image/product.product/689/image_1024/", // Black
+      "https://www.vicbay-gp.co.za/web/image/product.product/695/image_1024/", // White
+      "https://www.vicbay-gp.co.za/web/image/product.product/701/image_1024/", // Navy
+      "https://www.vicbay-gp.co.za/web/image/product.product/707/image_1024/", // Grey
+      "https://www.vicbay-gp.co.za/web/image/product.product/713/image_1024/", // Bottle Green
+      "https://www.vicbay-gp.co.za/web/image/product.product/719/image_1024/", // Red
+      "https://www.vicbay-gp.co.za/web/image/product.image/1438/image_1024/",  // Back
+    ],
     additionalInfo: [
       { label: "Fabric type", value: "100% ring spun cotton" },
       { label: "Weight", value: "160gsm" },

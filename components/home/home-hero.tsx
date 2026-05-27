@@ -52,9 +52,11 @@ export function HomeHero() {
               <HeroPrice label="Safety boots" price="R295.00" />
             </div>
           </div>
-          <div className="absolute right-8 top-0 border border-brand-orange/60 bg-brand-orange px-5 py-4 text-center shadow-glow-orange">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-white">Popular combo</p>
-            <p className="mt-1 text-sm text-orange-100">The site starter kit</p>
+          <div className="absolute right-2 top-0 z-10 flex aspect-square w-32 flex-col items-center justify-center gap-0.5 rounded-full border-2 border-brand-orange bg-neutral-900/80 text-center shadow-[0_0_40px_rgba(232,97,26,0.65),inset_0_0_16px_rgba(232,97,26,0.1)] backdrop-blur-sm transition-[box-shadow] duration-200 hover:shadow-[0_0_56px_rgba(232,97,26,0.85),inset_0_0_24px_rgba(232,97,26,0.15)] sm:right-6">
+            <p className="text-sm font-black uppercase leading-none tracking-tight text-white">Popular</p>
+            <p className="text-xs font-black uppercase leading-none tracking-tight text-brand-orange">Combo</p>
+            <span className="my-1.5 w-10 border-t border-brand-orange/70" />
+            <p className="text-[9px] font-medium uppercase tracking-[0.15em] text-neutral-300">starter kit</p>
           </div>
         </div>
       </div>
