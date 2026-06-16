@@ -398,6 +398,10 @@ export const allProducts: Product[] = [
     moq: "MOQ 10",
     colours: ["#c8e020", "#22334a", "#e8611a"],
     image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/31-700x933.png",
+    images: [
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/31-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/Vulcan-Website-Size-1-700x933.jpg",
+    ],
     badge: "Hi-viz",
     extraCategories: ["apparel/golfers"],
     additionalInfo: [
