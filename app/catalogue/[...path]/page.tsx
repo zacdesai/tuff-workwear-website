@@ -234,7 +234,9 @@ function CategoryListingPage({
   categoryTone: string;
 }) {
   const pathStr = categoryHref.replace("/catalogue/", "");
-  const products = allProducts.filter((p) => p.slug.startsWith(pathStr));
+  const products = allProducts.filter(
+    (p) => p.slug.startsWith(pathStr) || p.extraCategories?.includes(pathStr),
+  );
 
   return (
     <>

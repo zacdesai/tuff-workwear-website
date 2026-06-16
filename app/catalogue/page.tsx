@@ -26,8 +26,10 @@ export default function CataloguePage() {
       <div className="bg-white">
         {categories.map((category) => {
           const slugPrefix = category.href.replace("/catalogue/", "");
-          const products = allProducts.filter((p) =>
-            p.slug.startsWith(slugPrefix + "/"),
+          const products = allProducts.filter(
+            (p) =>
+              p.slug.startsWith(slugPrefix + "/") ||
+              p.extraCategories?.includes(slugPrefix),
           );
           if (products.length === 0) return null;
           const sectionId = slugPrefix.replace("/", "-");
