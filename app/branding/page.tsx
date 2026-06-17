@@ -46,8 +46,8 @@ export default function BrandingPage() {
           </div>
           <div className="relative min-h-[22rem] overflow-hidden">
             <img
-              src="/images/branding-team.jpg"
-              alt="A crew in matching branded workwear with embroidered name badges"
+              src="/images/branding-crew.jpg"
+              alt="A crew in matching branded hi-viz vests and hard hats on site"
               className="absolute inset-0 h-full w-full object-cover object-center"
             />
             <div className="absolute inset-0 bg-brand-charcoal/20" />
