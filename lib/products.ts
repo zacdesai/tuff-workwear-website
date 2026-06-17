@@ -320,10 +320,10 @@ export const allProducts: Product[] = [
     price: "R395.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a3c8a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/04/1-700x933.jpg",
+    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/J54-ROYAL-BLUE-700x933.png",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/04/1-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/04/2-700x933.jpg",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/J54-ROYAL-BLUE-700x933.png",
+      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/Vulcan-Website-Size-700x933.jpg",
     ],
     additionalInfo: [
       { label: "Fabric type", value: "100% cotton" },
