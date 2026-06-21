@@ -21,7 +21,8 @@ export default function ContactPage() {
       {/* Intro */}
       <section className="bg-brand-charcoal py-16 text-white lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="flex flex-col justify-center">
             <h1 className="text-5xl uppercase sm:text-6xl">Get hold of us.</h1>
             <span className="tuff-rule mt-6" />
             <p className="mt-7 text-lg text-neutral-200">
@@ -49,6 +50,15 @@ export default function ContactPage() {
                   Call us
                 </a>
               </Button>
+            </div>
+            </div>
+            <div className="relative min-h-[22rem] overflow-hidden">
+              <img
+                src="/images/contact-suits-rail.jpg"
+                alt="Tuff conti suits on a rail in the workshop"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-brand-charcoal/30" />
             </div>
           </div>
         </div>
