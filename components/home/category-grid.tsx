@@ -1,10 +1,11 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { categories } from "@/lib/products";
 
 export function CategoryGrid() {
   return (
-    <section className="bg-white py-16 lg:py-24">
+    <section className="bg-white py-16 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="eyebrow">Catalogue</p>
@@ -15,29 +16,28 @@ export function CategoryGrid() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category, index) => (
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          {categories.map((category) => (
             <Link
-              className="group relative min-h-64 overflow-hidden border border-neutral-200 bg-neutral-900 p-6 text-white shadow-sm"
+              className="group flex flex-col overflow-hidden border border-neutral-200 bg-brand-charcoal text-white transition-colors duration-150 hover:border-brand-orange"
               href={category.href}
               key={category.name}
             >
-              <div
-                className="absolute inset-0 opacity-80 transition-transform duration-300 group-hover:scale-105"
-                style={{
-                  background:
-                    index % 2 === 0
-                      ? "linear-gradient(135deg, #2d2d2d, #111111 55%, #e8611a)"
-                      : "linear-gradient(135deg, #111111, #2d2d2d 70%, #7c2e08)",
-                }}
-              />
-              <div className="industrial-grid absolute inset-0 opacity-60" aria-hidden="true" />
-              <div className="relative flex h-full min-h-52 flex-col justify-end">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-orange-100">
+              <div className="relative aspect-square bg-white">
+                <Image
+                  src={category.image}
+                  alt=""
+                  fill
+                  unoptimized
+                  className="object-cover object-[center_20%]"
+                />
+              </div>
+              <div className="flex flex-1 flex-col border-t-4 border-brand-orange p-4 sm:p-5">
+                <h3 className="font-display text-lg uppercase leading-tight sm:text-2xl">{category.name}</h3>
+                <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.14em] text-orange-300">
                   {category.count}
                 </p>
-                <h3 className="mt-2 text-3xl font-black uppercase">{category.name}</h3>
-                <p className="mt-3 max-w-sm text-sm text-neutral-200">{category.tone}</p>
+                <p className="mt-2 hidden text-sm text-neutral-300 sm:block">{category.tone}</p>
               </div>
             </Link>
           ))}

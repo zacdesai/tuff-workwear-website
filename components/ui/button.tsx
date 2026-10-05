@@ -10,7 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-brand-orange text-white shadow-[0_10px_24px_rgba(232,97,26,0.22)] hover:bg-orange-600 active:bg-orange-700 active:scale-[0.98]",
+          "bg-brand-orange text-white hover:bg-orange-600 active:bg-orange-700 active:scale-[0.98]",
         secondary:
           "border border-brand-charcoal bg-white text-brand-charcoal hover:bg-neutral-100 active:scale-[0.98]",
         inverse:
@@ -20,7 +20,7 @@ const buttonVariants = cva(
         outlineDark:
           "border border-white/50 bg-transparent text-white hover:border-white hover:bg-white hover:text-brand-charcoal",
         whatsapp:
-          "bg-[#25D366] text-white shadow-[0_10px_24px_rgba(37,211,102,0.2)] hover:bg-[#1fb85a] active:scale-[0.98]",
+          "bg-[#25D366] text-white hover:bg-[#1fb85a] active:scale-[0.98]",
       },
       size: {
         sm: "h-8 px-3 text-xs",

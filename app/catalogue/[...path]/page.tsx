@@ -129,7 +129,7 @@ function ProductDetailPage({ product }: { product: (typeof allProducts)[number] 
                   src={product.image!}
                   alt={product.name}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  unoptimized
                   className="object-cover object-top"
                 />
                 {product.badge && (

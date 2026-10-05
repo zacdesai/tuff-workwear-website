@@ -30,7 +30,7 @@ export function ImageGallery({
           src={images[selected]}
           alt={alt}
           fill
-          sizes="(max-width: 1024px) 100vw, 50vw"
+          unoptimized
           className="object-cover object-top"
         />
         {badge && (
@@ -77,6 +77,7 @@ export function ImageGallery({
                 alt={`${alt} — colour ${i + 1}`}
                 width={48}
                 height={64}
+                unoptimized
                 className="object-cover object-top"
               />
             </button>

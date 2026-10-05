@@ -22,42 +22,49 @@ export const categories = [
   {
     name: "Conti suits",
     href: "/catalogue/conti-suits",
+    image: "/products/econo-conti-suit-2.webp",
     count: "6 styles, sizes 30 to 56",
     tone: "Econo to premium. 80/20 poly cotton, denim, hi-viz. One price per size run.",
   },
   {
     name: "Hi-viz",
     href: "/catalogue/hi-viz",
+    image: "/products/hi-viz-two-tone-worksuit-1.webp",
     count: "Orange/navy and lime/navy",
     tone: "65/35 polycotton with reflective tape across chest, sleeves and legs.",
   },
   {
     name: "Flame & acid",
     href: "/catalogue/flame-acid",
+    image: "/products/d59-blaze-flame-acid-suit-1.webp",
     count: "D59 navy, sizes 28 to 54",
     tone: "Sasol-spec flame-retardant and acid-resistant suits. Triple stitched, YKK zips, navy.",
   },
   {
     name: "Safety boots",
     href: "/catalogue/safety-boots",
+    image: "/products/kirin-steel-toe-1.webp",
     count: "Steel toe, NRCS approved",
     tone: "Buffalo leather upper, cushioned insole, anti-slip sole. MOQ 10.",
   },
   {
     name: "Rain & freezer",
     href: "/catalogue/rain-freezer",
+    image: "/products/rubberised-rain-suit-yellow-1.webp",
     count: "Rubberised suits and below-zero gear",
     tone: "2-piece rain suits from R225. Freezer jackets from R350.",
   },
   {
     name: "Golfers",
     href: "/catalogue/apparel/golfers",
+    image: "/products/vicbay-polo-180gsm-6.webp",
     count: "13 colours, S to 3XL",
     tone: "180gsm Vicbay polo. 100% cotton pique, branding-ready.",
   },
   {
     name: "T-shirts",
     href: "/catalogue/apparel/t-shirts",
+    image: "/products/vicbay-heavyweight-180gsm-4.webp",
     count: "160gsm and 180gsm, S to 3XL",
     tone: "Vicbay Platinum and Heavyweight. Bulk basics with clean colour runs.",
   },
@@ -73,15 +80,15 @@ export const featuredProducts: Product[] = [
     price: "R149.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a1a1a", "#1a3c8a", "#1a6b3c", "#9e9e9e", "#8c7d62", "#c0392b", "#e8611a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
+    image: "/products/econo-conti-suit-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ROYAL-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-BLACK-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-GREY-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-EMERALD-GREEN-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ORANGE-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-RED-700x933.jpg",
+      "/products/econo-conti-suit-1.webp",
+      "/products/econo-conti-suit-2.webp",
+      "/products/econo-conti-suit-3.webp",
+      "/products/econo-conti-suit-4.webp",
+      "/products/econo-conti-suit-5.webp",
+      "/products/econo-conti-suit-6.webp",
+      "/products/econo-conti-suit-7.webp",
     ],
     badge: "Best seller",
   },
@@ -94,15 +101,15 @@ export const featuredProducts: Product[] = [
     price: "R225.00",
     moq: "MOQ 10",
     colours: ["#9e9e9e", "#1a3c8a", "#c0392b", "#1a1a1a", "#22334a", "#1a6b3c", "#6b7c5a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
+    image: "/products/premium-conti-suit-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-ROYAL-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-RED-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/11_030_Black-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/6535-NAVY-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/EMERALD-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/OLIVE-700x933.png",
+      "/products/premium-conti-suit-1.webp",
+      "/products/premium-conti-suit-2.webp",
+      "/products/premium-conti-suit-3.webp",
+      "/products/premium-conti-suit-4.webp",
+      "/products/premium-conti-suit-5.webp",
+      "/products/premium-conti-suit-6.webp",
+      "/products/premium-conti-suit-7.webp",
     ],
   },
   {
@@ -114,7 +121,7 @@ export const featuredProducts: Product[] = [
     price: "R525.00",
     moq: "MOQ 10",
     colours: ["#e8611a", "#22334a", "#c8e020", "#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/HI-VIZ-700x933.jpg",
+    image: "/products/hi-viz-two-tone-worksuit-1.webp",
     badge: "Hi-viz",
   },
   {
@@ -126,7 +133,7 @@ export const featuredProducts: Product[] = [
     price: "R295.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a"],
-    image: "/kirin-boot.png",
+    image: "/products/kirin-steel-toe-1.webp",
     badge: "NRCS approved",
   },
   {
@@ -138,7 +145,7 @@ export const featuredProducts: Product[] = [
     price: "R295.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a"],
-    image: "/rokolo-boot.png",
+    image: "/products/rokolo-1.webp",
     badge: "NRCS approved",
   },
   {
@@ -150,7 +157,7 @@ export const featuredProducts: Product[] = [
     price: "R125.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#7a8c5a", "#c0392b", "#e8a020", "#4a90d9", "#d4c9b0"],
-    image: "https://www.vicbay-gp.co.za/web/image/product.product/550/image_1024/%5B7BG31%5D%20Mens%20Polo%20%28Black%2C%20S%29?unique=9f092c2",
+    image: "/products/vicbay-polo-180gsm-1.webp",
   },
   {
     id: "VICBAY-HEAVY-TEE-180",
@@ -161,7 +168,7 @@ export const featuredProducts: Product[] = [
     price: "R95.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#6b4b2a", "#7a8c5a"],
-    image: "https://www.vicbay-gp.co.za/web/image/product.product/308/image_1024/%5B8BG31%5D%20Heavyweight%20T-shirt%20%28Black%2C%20S%29?unique=342b70e",
+    image: "/products/vicbay-heavyweight-180gsm-1.webp",
   },
   {
     id: "D59-BLAZE-FLAME-ACID",
@@ -172,7 +179,7 @@ export const featuredProducts: Product[] = [
     price: "R590.00",
     moq: "MOQ 10",
     colours: ["#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/41_090_NV-1-700x933.jpg",
+    image: "/products/d59-blaze-flame-acid-suit-1.webp",
     badge: "Flame & acid",
   },
   {
@@ -184,7 +191,7 @@ export const featuredProducts: Product[] = [
     price: "R200.00",
     moq: "MOQ 10",
     colours: ["#c8e020", "#22334a", "#e8611a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/31-700x933.png",
+    image: "/products/hi-viz-two-tone-golfer-1.webp",
     badge: "Hi-viz",
   },
 ];
@@ -201,15 +208,15 @@ export const allProducts: Product[] = [
     price: "R149.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a1a1a", "#1a3c8a", "#1a6b3c", "#9e9e9e", "#8c7d62", "#c0392b", "#e8611a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
+    image: "/products/econo-conti-suit-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-ECONO-PLAIN-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ROYAL-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-BLACK-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-GREY-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-EMERALD-GREEN-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-ORANGE-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/ECONO-RED-700x933.jpg",
+      "/products/econo-conti-suit-1.webp",
+      "/products/econo-conti-suit-2.webp",
+      "/products/econo-conti-suit-3.webp",
+      "/products/econo-conti-suit-4.webp",
+      "/products/econo-conti-suit-5.webp",
+      "/products/econo-conti-suit-6.webp",
+      "/products/econo-conti-suit-7.webp",
     ],
     badge: "Best seller",
     additionalInfo: [
@@ -231,12 +238,12 @@ export const allProducts: Product[] = [
     price: "R175.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a1a1a", "#1a3c8a", "#1a6b3c", "#9e9e9e", "#8c7d62", "#c0392b", "#e8611a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-NAVY-TAPE-700x933.png",
+    image: "/products/econo-conti-suit-reflective-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-NAVY-TAPE-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-BLACK-REFLECTIVE-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/ECONO-EG-REFLECT-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/43_010_REF-700x933.jpg",
+      "/products/econo-conti-suit-reflective-1.webp",
+      "/products/econo-conti-suit-reflective-2.webp",
+      "/products/econo-conti-suit-reflective-3.webp",
+      "/products/econo-conti-suit-reflective-4.webp",
     ],
     additionalInfo: [
       { label: "Fabric type", value: "195gsm polycotton" },
@@ -258,15 +265,15 @@ export const allProducts: Product[] = [
     price: "R225.00",
     moq: "MOQ 10",
     colours: ["#9e9e9e", "#1a3c8a", "#c0392b", "#1a1a1a", "#22334a", "#1a6b3c", "#6b7c5a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
+    image: "/products/premium-conti-suit-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/PREMIUM-GREY-65-35-14-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-ROYAL-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/65-35-PREMIUM-RED-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/11_030_Black-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/6535-NAVY-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/EMERALD-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/OLIVE-700x933.png",
+      "/products/premium-conti-suit-1.webp",
+      "/products/premium-conti-suit-2.webp",
+      "/products/premium-conti-suit-3.webp",
+      "/products/premium-conti-suit-4.webp",
+      "/products/premium-conti-suit-5.webp",
+      "/products/premium-conti-suit-6.webp",
+      "/products/premium-conti-suit-7.webp",
     ],
     additionalInfo: [
       { label: "Fabric type", value: "80/20 polycotton" },
@@ -287,10 +294,10 @@ export const allProducts: Product[] = [
     price: "R260.00",
     moq: "MOQ 10",
     colours: ["#9e9e9e", "#1a3c8a", "#c0392b", "#1a1a1a", "#22334a", "#1a6b3c"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/REFLECTIVE-700x933.png",
+    image: "/products/premium-conti-suit-reflective-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/REFLECTIVE-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/NAVY-REFLECTIVE-700x933.png",
+      "/products/premium-conti-suit-reflective-1.webp",
+      "/products/premium-conti-suit-reflective-2.webp",
     ],
     additionalInfo: [
       { label: "Fabric type", value: "80/20 polycotton" },
@@ -312,7 +319,7 @@ export const allProducts: Product[] = [
     price: "R265.00",
     moq: "MOQ 10",
     colours: ["#3b5175"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/Untitled-design-22-700x933.png",
+    image: "/products/denim-conti-suit-1.webp",
     additionalInfo: [
       { label: "Fabric type", value: "100% cotton denim" },
       { label: "Sizes", value: "30 – 54" },
@@ -332,10 +339,10 @@ export const allProducts: Product[] = [
     price: "R395.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a3c8a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/J54-ROYAL-BLUE-700x933.png",
+    image: "/products/j54-cotton-premium-suit-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/J54-ROYAL-BLUE-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/Vulcan-Website-Size-700x933.jpg",
+      "/products/j54-cotton-premium-suit-1.webp",
+      "/products/j54-cotton-premium-suit-2.webp",
     ],
     additionalInfo: [
       { label: "Fabric type", value: "100% cotton" },
@@ -359,10 +366,10 @@ export const allProducts: Product[] = [
     price: "R425.00",
     moq: "MOQ 10",
     colours: ["#22334a", "#1a3c8a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/04/1-700x933.jpg",
+    image: "/products/j54-cotton-premium-suit-reflective-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/04/1-700x933.jpg",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/04/2-700x933.jpg",
+      "/products/j54-cotton-premium-suit-reflective-1.webp",
+      "/products/j54-cotton-premium-suit-reflective-2.webp",
     ],
     additionalInfo: [
       { label: "Fabric type", value: "100% cotton" },
@@ -387,7 +394,7 @@ export const allProducts: Product[] = [
     price: "R525.00",
     moq: "MOQ 10",
     colours: ["#e8611a", "#22334a", "#c8e020", "#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/HI-VIZ-700x933.jpg",
+    image: "/products/hi-viz-two-tone-worksuit-1.webp",
     badge: "Hi-viz",
     additionalInfo: [
       { label: "Fabric type", value: "65/35 polycotton" },
@@ -409,10 +416,10 @@ export const allProducts: Product[] = [
     price: "R200.00",
     moq: "MOQ 10",
     colours: ["#c8e020", "#22334a", "#e8611a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/31-700x933.png",
+    image: "/products/hi-viz-two-tone-golfer-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/31-700x933.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/Vulcan-Website-Size-1-700x933.jpg",
+      "/products/hi-viz-two-tone-golfer-1.webp",
+      "/products/hi-viz-two-tone-golfer-2.webp",
     ],
     badge: "Hi-viz",
     extraCategories: ["apparel/golfers"],
@@ -434,10 +441,10 @@ export const allProducts: Product[] = [
     price: "R595.00",
     moq: "MOQ 10",
     colours: ["#c8e020", "#e8611a", "#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/02/Elite-Bunny-Jacket_Luminous-Yellow-700x934.png",
+    image: "/products/bunny-jacket-1.webp",
     images: [
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/02/Elite-Bunny-Jacket_Luminous-Yellow-700x934.png",
-      "https://vulcanworkwear.co.za/wp-content/uploads/2023/02/Elite-Bunny-Jacket_Luminous-Orange-700x934.png",
+      "/products/bunny-jacket-1.webp",
+      "/products/bunny-jacket-2.webp",
     ],
     badge: "Hi-viz",
     additionalInfo: [
@@ -461,7 +468,7 @@ export const allProducts: Product[] = [
     price: "R590.00",
     moq: "MOQ 10",
     colours: ["#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/41_090_NV-1-700x933.jpg",
+    image: "/products/d59-blaze-flame-acid-suit-1.webp",
     badge: "Flame & acid",
     additionalInfo: [
       { label: "Fabric type", value: "D59 flame-retardant acid-resistant" },
@@ -485,14 +492,14 @@ export const allProducts: Product[] = [
     price: "R295.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a"],
-    image: "/kirin-boot.png",
+    image: "/products/kirin-steel-toe-1.webp",
     images: [
-      "/kirin-boot.png",
-      "/kirin-boot-2.jpg",
-      "/kirin-boot-3.jpg",
-      "/kirin-boot-4.jpg",
-      "/kirin-boot-5.jpg",
-      "/kirin-boot-6.jpg",
+      "/products/kirin-steel-toe-1.webp",
+      "/products/kirin-steel-toe-2.webp",
+      "/products/kirin-steel-toe-3.webp",
+      "/products/kirin-steel-toe-4.webp",
+      "/products/kirin-steel-toe-5.webp",
+      "/products/kirin-steel-toe-6.webp",
     ],
     badge: "NRCS approved",
     additionalInfo: [
@@ -514,8 +521,8 @@ export const allProducts: Product[] = [
     price: "R295.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a"],
-    image: "/rokolo-boot.png",
-    images: ["/rokolo-boot.png", "/rokolo-boot-2.png"],
+    image: "/products/rokolo-1.webp",
+    images: ["/products/rokolo-1.webp", "/products/rokolo-2.webp"],
     badge: "NRCS approved",
     additionalInfo: [
       { label: "Upper material", value: "Full-grain cow leather" },
@@ -540,7 +547,7 @@ export const allProducts: Product[] = [
     price: "R225.00",
     moq: "MOQ 5",
     colours: ["#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/35-700x933.png",
+    image: "/products/rubberised-rain-suit-navy-1.webp",
     additionalInfo: [
       { label: "Fabric type", value: "Rubberised waterproof" },
       { label: "Garment type", value: "2-piece suit (jacket and trousers)" },
@@ -558,7 +565,7 @@ export const allProducts: Product[] = [
     price: "R225.00",
     moq: "MOQ 5",
     colours: ["#f5c518"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2024/11/34-700x933.png",
+    image: "/products/rubberised-rain-suit-yellow-1.webp",
     additionalInfo: [
       { label: "Fabric type", value: "Rubberised waterproof" },
       { label: "Garment type", value: "2-piece suit (jacket and trousers)" },
@@ -576,7 +583,7 @@ export const allProducts: Product[] = [
     price: "R350.00",
     moq: "MOQ 5",
     colours: ["#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/4-1-700x933.png",
+    image: "/products/below-zero-freezer-jacket-1.webp",
     additionalInfo: [
       { label: "Outer shell", value: "Oxford nylon" },
       { label: "Lining", value: "Cotton inner" },
@@ -596,7 +603,7 @@ export const allProducts: Product[] = [
     price: "R295.00",
     moq: "MOQ 5",
     colours: ["#22334a"],
-    image: "https://vulcanworkwear.co.za/wp-content/uploads/2023/01/6-700x933.png",
+    image: "/products/below-zero-freezer-pants-1.webp",
     additionalInfo: [
       { label: "Outer shell", value: "Oxford nylon" },
       { label: "Lining", value: "Cotton inner" },
@@ -617,23 +624,23 @@ export const allProducts: Product[] = [
     price: "R125.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#7a8c5a", "#c0392b", "#e8a020", "#4a90d9", "#d4c9b0"],
-    image: "https://www.vicbay-gp.co.za/web/image/product.product/550/image_1024/%5B7BG31%5D%20Mens%20Polo%20%28Black%2C%20S%29?unique=9f092c2",
+    image: "/products/vicbay-polo-180gsm-1.webp",
     images: [
-      "https://www.vicbay-gp.co.za/web/image/product.product/550/image_1024/", // Black
-      "https://www.vicbay-gp.co.za/web/image/product.product/556/image_1024/", // White
-      "https://www.vicbay-gp.co.za/web/image/product.product/562/image_1024/", // Navy
-      "https://www.vicbay-gp.co.za/web/image/product.product/568/image_1024/", // Grey
-      "https://www.vicbay-gp.co.za/web/image/product.product/574/image_1024/", // Royal Blue
-      "https://www.vicbay-gp.co.za/web/image/product.product/580/image_1024/", // Sky Blue
-      "https://www.vicbay-gp.co.za/web/image/product.product/586/image_1024/", // Bottle Green
-      "https://www.vicbay-gp.co.za/web/image/product.product/592/image_1024/", // Lime Green
-      "https://www.vicbay-gp.co.za/web/image/product.product/598/image_1024/", // Khaki
-      "https://www.vicbay-gp.co.za/web/image/product.product/604/image_1024/", // Pink
-      "https://www.vicbay-gp.co.za/web/image/product.product/610/image_1024/", // Yellow
-      "https://www.vicbay-gp.co.za/web/image/product.product/616/image_1024/", // Orange
-      "https://www.vicbay-gp.co.za/web/image/product.product/622/image_1024/", // Red
-      "https://www.vicbay-gp.co.za/web/image/product.image/836/image_1024/",   // Back
-      "https://www.vicbay-gp.co.za/web/image/product.image/944/image_1024/",   // Back 2
+      "/products/vicbay-polo-180gsm-2.webp", // Black
+      "/products/vicbay-polo-180gsm-3.webp", // White
+      "/products/vicbay-polo-180gsm-4.webp", // Navy
+      "/products/vicbay-polo-180gsm-5.webp", // Grey
+      "/products/vicbay-polo-180gsm-6.webp", // Royal Blue
+      "/products/vicbay-polo-180gsm-7.webp", // Sky Blue
+      "/products/vicbay-polo-180gsm-8.webp", // Bottle Green
+      "/products/vicbay-polo-180gsm-9.webp", // Lime Green
+      "/products/vicbay-polo-180gsm-10.webp", // Khaki
+      "/products/vicbay-polo-180gsm-11.webp", // Pink
+      "/products/vicbay-polo-180gsm-12.webp", // Yellow
+      "/products/vicbay-polo-180gsm-13.webp", // Orange
+      "/products/vicbay-polo-180gsm-14.webp", // Red
+      "/products/vicbay-polo-180gsm-15.webp",   // Back
+      "/products/vicbay-polo-180gsm-16.webp",   // Back 2
     ],
     additionalInfo: [
       { label: "Fabric type", value: "100% cotton pique" },
@@ -654,17 +661,17 @@ export const allProducts: Product[] = [
     price: "R95.00",
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#6b4b2a", "#7a8c5a"],
-    image: "https://www.vicbay-gp.co.za/web/image/product.product/308/image_1024/%5B8BG31%5D%20Heavyweight%20T-shirt%20%28Black%2C%20S%29?unique=342b70e",
+    image: "/products/vicbay-heavyweight-180gsm-1.webp",
     images: [
-      "https://www.vicbay-gp.co.za/web/image/product.product/308/image_1024/", // Black
-      "https://www.vicbay-gp.co.za/web/image/product.product/316/image_1024/", // White
-      "https://www.vicbay-gp.co.za/web/image/product.product/324/image_1024/", // Navy
-      "https://www.vicbay-gp.co.za/web/image/product.product/332/image_1024/", // Sky Blue
-      "https://www.vicbay-gp.co.za/web/image/product.product/340/image_1024/", // Purple
-      "https://www.vicbay-gp.co.za/web/image/product.product/348/image_1024/", // Pink
-      "https://www.vicbay-gp.co.za/web/image/product.product/356/image_1024/", // Brown
-      "https://www.vicbay-gp.co.za/web/image/product.product/364/image_1024/", // Stone
-      "https://www.vicbay-gp.co.za/web/image/product.image/354/image_1024/",   // Back
+      "/products/vicbay-heavyweight-180gsm-2.webp", // Black
+      "/products/vicbay-heavyweight-180gsm-3.webp", // White
+      "/products/vicbay-heavyweight-180gsm-4.webp", // Navy
+      "/products/vicbay-heavyweight-180gsm-5.webp", // Sky Blue
+      "/products/vicbay-heavyweight-180gsm-6.webp", // Purple
+      "/products/vicbay-heavyweight-180gsm-7.webp", // Pink
+      "/products/vicbay-heavyweight-180gsm-8.webp", // Brown
+      "/products/vicbay-heavyweight-180gsm-9.webp", // Stone
+      "/products/vicbay-heavyweight-180gsm-10.webp",   // Back
     ],
     additionalInfo: [
       { label: "Fabric type", value: "100% combed cotton" },
@@ -684,15 +691,15 @@ export const allProducts: Product[] = [
     price: "R83.75",
     moq: "MOQ 10",
     colours: ["#1a1a1a", "#ffffff", "#22334a", "#c0392b", "#4a90d9", "#1a6b3c", "#e8611a", "#9e9e9e"],
-    image: "https://www.vicbay-gp.co.za/web/image/product.product/689/image_1024/%5B6BG31%5D%20Platinum%20T-shirt%20%28Black%2C%20S%29?unique=1ebc39c",
+    image: "/products/vicbay-platinum-160gsm-1.webp",
     images: [
-      "https://www.vicbay-gp.co.za/web/image/product.product/689/image_1024/", // Black
-      "https://www.vicbay-gp.co.za/web/image/product.product/695/image_1024/", // White
-      "https://www.vicbay-gp.co.za/web/image/product.product/701/image_1024/", // Navy
-      "https://www.vicbay-gp.co.za/web/image/product.product/707/image_1024/", // Grey
-      "https://www.vicbay-gp.co.za/web/image/product.product/713/image_1024/", // Bottle Green
-      "https://www.vicbay-gp.co.za/web/image/product.product/719/image_1024/", // Red
-      "https://www.vicbay-gp.co.za/web/image/product.image/1438/image_1024/",  // Back
+      "/products/vicbay-platinum-160gsm-2.webp", // Black
+      "/products/vicbay-platinum-160gsm-3.webp", // White
+      "/products/vicbay-platinum-160gsm-4.webp", // Navy
+      "/products/vicbay-platinum-160gsm-5.webp", // Grey
+      "/products/vicbay-platinum-160gsm-6.webp", // Bottle Green
+      "/products/vicbay-platinum-160gsm-7.webp", // Red
+      "/products/vicbay-platinum-160gsm-8.webp",  // Back
     ],
     additionalInfo: [
       { label: "Fabric type", value: "100% ring spun cotton" },

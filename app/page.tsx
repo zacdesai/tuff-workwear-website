@@ -19,6 +19,8 @@ export default function Home() {
       />
       <HomeHero />
       <TrustStrip />
+      <FeaturedProducts />
+      <CategoryGrid />
       <TuffBlock
         eyebrow="Featured product"
         title={featured.name}
@@ -37,8 +39,6 @@ export default function Home() {
           href: `/catalogue/${featured.slug}`,
         }}
       />
-      <CategoryGrid />
-      <FeaturedProducts />
       <HowToOrder />
       <ContactBar />
     </>

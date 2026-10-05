@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -33,19 +34,14 @@ export function TuffBlock({
   return (
     <section className="bg-brand-charcoal text-white">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8 lg:py-24">
-        <div className="relative min-h-[24rem] overflow-hidden border border-white/10 bg-neutral-900">
-          <div className="industrial-grid absolute inset-0 opacity-80" aria-hidden="true" />
+        <div className="relative min-h-[24rem] overflow-hidden border border-white/10 bg-white">
           {image && (
-            <img
-              src={image}
-              alt={title}
-              className="absolute inset-0 h-full w-full object-cover object-top opacity-60"
-            />
+            <Image src={image} alt={title} fill unoptimized className="object-cover object-top" />
           )}
-          <div className="absolute left-6 top-6 rounded-full bg-brand-orange px-4 py-2 text-xs font-black uppercase tracking-[0.14em]">
+          <div className="absolute left-6 top-6 rounded-full bg-brand-orange px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white">
             {badge}
           </div>
-          <div className="absolute inset-x-10 bottom-10 rounded-sm border border-white/10 bg-white/[0.08] p-6 backdrop-blur-sm">
+          <div className="absolute inset-x-6 bottom-6 border-t-4 border-brand-orange bg-brand-black p-6 sm:inset-x-10 sm:bottom-10">
             <span className="inline-block bg-brand-orange px-2 py-0.5 text-xs font-bold uppercase tracking-[0.14em] text-white">
               Featured line
             </span>

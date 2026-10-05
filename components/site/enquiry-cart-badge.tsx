@@ -11,7 +11,7 @@ export function EnquiryCartBadge() {
   return (
     <Link
       href="/enquiry"
-      className="relative flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-neutral-700 transition-colors hover:text-brand-orange"
+      className="relative flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-bold uppercase tracking-[0.12em] text-neutral-300 transition-colors hover:text-brand-orange"
     >
       Enquiry list
       <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-brand-orange px-1 text-[10px] font-black text-white">

@@ -87,8 +87,12 @@
   --ring-focus: var(--orange-500);
 }
 
-* {
-  border-color: var(--border-subtle);
+/* In the base layer, or this unlayered rule beats every Tailwind border-colour
+   utility and turns orange borders grey. */
+@layer base {
+  * {
+    border-color: var(--border-subtle);
+  }
 }
 
 html {
@@ -99,9 +103,7 @@ html {
 
 body {
   min-height: 100vh;
-  background:
-    radial-gradient(circle at 10% 0%, rgba(232, 97, 26, 0.08), transparent 28rem),
-    linear-gradient(180deg, #ffffff 0%, #f7f7f7 100%);
+  background: var(--surface-page);
   color: var(--text-primary);
   font-family: var(--font-inter), system-ui, sans-serif;
   line-height: 1.5;
@@ -147,17 +149,30 @@ h6 {
   text-transform: uppercase;
 }
 
+/* Flat orange on dark surfaces. The orange glow went in the October 2026
+   refresh, with the frosted glass and blur: flat colour reads faster. */
 .price-emphasis {
-  color: var(--brand-white);
+  color: var(--brand-orange);
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-variant-numeric: tabular-nums;
-  font-weight: 800;
-  text-shadow: var(--shadow-glow-orange);
+  letter-spacing: -0.02em;
 }
 
 .price-emphasis-light {
   color: var(--orange-700);
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-variant-numeric: tabular-nums;
-  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+/* Workwear hazard band across the very top of every page. */
+.hazard-band {
+  height: 8px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--brand-orange) 0 16px,
+    var(--brand-black) 16px 32px
+  );
 }
 
 .industrial-grid {

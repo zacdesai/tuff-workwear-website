@@ -2,6 +2,7 @@ import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { MobileActionBar } from "@/components/site/mobile-action-bar";
 import { siteConfig, whatsappHref } from "@/lib/site";
 
 type FooterLink = { label: string; href: string };
@@ -72,6 +73,8 @@ export function SiteFooter() {
           © 2026 Tuff Workwear · Part of the Taurus Workwear group · POPIA · Terms · Privacy
         </div>
       </div>
+      <div className="h-[72px] lg:hidden" aria-hidden="true" />
+      <MobileActionBar />
     </footer>
   );
 }
