@@ -55,7 +55,7 @@ export default function BulkOrdersPage() {
             <div className="w-full lg:w-80 xl:w-96">
               <img
                 src="/kit-the-crew.png"
-                alt="Kit out the crew — Tuff Workwear range overview"
+                alt="Kit out the crew: Tuff Workwear range overview"
                 className="w-full"
               />
             </div>
@@ -76,7 +76,7 @@ export default function BulkOrdersPage() {
               <p className="mt-7 text-lg text-neutral-600">
                 WhatsApp or call with your product list, quantities, sizes and colours.
                 We check stock, confirm a quote and arrange delivery. Nationwide courier
-                on all bulk orders — freight is included in the quote.
+                on all bulk orders, with freight included in the quote.
               </p>
               <p className="mt-4 text-lg text-neutral-600">
                 We come back within a business day with availability and pricing.

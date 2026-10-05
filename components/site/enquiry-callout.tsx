@@ -18,7 +18,7 @@ export function EnquiryCallout() {
           You have {itemCount} item{itemCount !== 1 ? "s" : ""} in your enquiry list.
         </p>
         <p className="mt-1 text-sm text-neutral-600">
-          Review and send your list before you call — we can quote faster when we know exactly what you need.
+          Review and send your list before you call. We can quote faster when we know exactly what you need.
         </p>
         <Link
           href="/enquiry"

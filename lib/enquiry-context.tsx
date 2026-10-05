@@ -62,7 +62,7 @@ export function EnquiryProvider({ children }: { children: ReactNode }) {
     items.length === 0
       ? "Hi Tuff, I'd like to browse your workwear range."
       : `Hi Tuff, I'd like to enquire about the following:\n\n${items
-          .map((p, i) => `${i + 1}. ${p.name} — ${p.price} (${p.moq})`)
+          .map((p, i) => `${i + 1}. ${p.name}: ${p.price} (${p.moq})`)
           .join("\n")}\n\nPlease confirm stock, sizes and delivery to my location.`;
 
   return (

@@ -74,7 +74,7 @@ export function ImageGallery({
             >
               <Image
                 src={src}
-                alt={`${alt} — colour ${i + 1}`}
+                alt={`${alt}, colour ${i + 1}`}
                 width={48}
                 height={64}
                 unoptimized

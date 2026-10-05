@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      {/* Hero — who we are */}
+      {/* Hero: who we are */}
       <section className="bg-brand-charcoal text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:px-8 lg:py-24">
           <div className="flex flex-col justify-center">
@@ -25,7 +25,7 @@ export default function AboutPage() {
             <span className="tuff-rule mt-6" />
             <p className="mt-7 max-w-xl text-lg text-neutral-200">
               Tuff Workwear is Taurus Workwear's Durban operation. Taurus has been in the
-              workwear trade for over 20 years — supplying mines, construction crews, food
+              workwear trade for over 20 years, supplying mines, construction crews, food
               processing plants, garden services and local businesses across South Africa.
             </p>
             <p className="mt-5 max-w-xl text-lg text-neutral-200">
@@ -54,13 +54,13 @@ export default function AboutPage() {
             </h2>
             <span className="tuff-rule mt-4" />
             <p className="mt-7 text-lg text-neutral-600">
-              Our gear comes from Vulcan Workwear — a South African manufacturer with
+              Our gear comes from Vulcan Workwear, a South African manufacturer with
               decades of technical workwear heritage and SABS-approved production.
             </p>
             <p className="mt-4 text-lg text-neutral-600">
               Conti suits from econo to premium, safety boots, hi-viz worksuits, rain
               gear, freezer wear and branded apparel. For SABS flame and acid suits or
-              specialist protective clothing, call us — some lines need a proper
+              specialist protective clothing, call us. Some lines need a proper
               conversation before we confirm stock.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

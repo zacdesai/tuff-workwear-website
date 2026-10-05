@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (product) {
     return {
       title: product.name,
-      description: `${product.name} — ${product.spec}. ${product.price}. ${product.moq}. WhatsApp Tuff Workwear for stock and delivery.`,
+      description: `${product.name}: ${product.spec}. ${product.price}. ${product.moq}. WhatsApp Tuff Workwear for stock and delivery.`,
     };
   }
 
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (category) {
     return {
       title: category.name,
-      description: `${category.name} — ${category.tone} MOQ 10. WhatsApp Tuff Workwear for pricing and stock.`,
+      description: `${category.name}: ${category.tone} MOQ 10. WhatsApp Tuff Workwear for pricing and stock.`,
     };
   }
 
@@ -105,7 +105,7 @@ function ProductDetailPage({ product }: { product: (typeof allProducts)[number] 
       <div className="bg-brand-charcoal py-4">
         <div className="mx-auto flex max-w-7xl flex-col items-start gap-3 px-4 sm:flex-row sm:items-center sm:justify-between sm:px-6 lg:px-8">
           <p className="text-sm text-neutral-200">
-            <span className="font-bold text-white">{product.name}</span> — {product.moq} · WhatsApp for stock and delivery
+            <span className="font-bold text-white">{product.name}</span> · {product.moq} · WhatsApp for stock and delivery
           </p>
           <Button asChild size="sm" variant="whatsapp">
             <a href={enquireHref}>

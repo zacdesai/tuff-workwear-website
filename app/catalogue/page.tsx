@@ -18,7 +18,7 @@ export default function CataloguePage() {
           <h1 className="mt-5 text-5xl uppercase sm:text-6xl">Our range.</h1>
           <span className="tuff-rule mt-6" />
           <p className="mt-7 max-w-xl text-lg text-neutral-200">
-            Pick a category. Check specs and pricing. WhatsApp us with sizes and quantities — we'll come back with stock availability and a quote.
+            Pick a category. Check specs and pricing. WhatsApp us with sizes and quantities. We'll come back with stock availability and a quote.
           </p>
         </div>
       </section>

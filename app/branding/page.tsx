@@ -25,7 +25,7 @@ export default function BrandingPage() {
             <span className="tuff-rule mt-6" />
             <p className="mt-7 max-w-xl text-lg text-neutral-200">
               Screen printing and embroidery on most lines we stock. If you're already
-              ordering 10 or more garments, branding is worth adding — the cost per unit
+              ordering 10 or more garments, branding is worth adding. The cost per unit
               is low and the result looks professional on site.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -66,7 +66,7 @@ export default function BrandingPage() {
               <p className="mt-7 text-lg text-neutral-600">
                 Conti suits, golfers, t-shirts and jackets. Most Vicbay apparel takes
                 embroidery well. For larger runs, screen printing is available on select
-                garments. If you're unsure what works on a specific item, ask — we'll
+                garments. If you're unsure what works on a specific item, ask. We'll
                 tell you straight.
               </p>
             </div>

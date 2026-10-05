@@ -541,7 +541,7 @@ export const allProducts: Product[] = [
   {
     id: "RAIN-RUBBERISED-NAVY",
     category: "Rain suit",
-    name: "Rubberised Rain Suit — Navy",
+    name: "Navy Rubberised Rain Suit",
     slug: "rain-freezer/rubberised-rain-suit-navy",
     spec: "2-piece set · rubberised waterproof fabric · hooded jacket and matching trousers · taped seams",
     price: "R225.00",
@@ -559,7 +559,7 @@ export const allProducts: Product[] = [
   {
     id: "RAIN-RUBBERISED-YELLOW",
     category: "Rain suit",
-    name: "Rubberised Rain Suit — Yellow",
+    name: "Yellow Rubberised Rain Suit",
     slug: "rain-freezer/rubberised-rain-suit-yellow",
     spec: "2-piece set · rubberised waterproof fabric · hooded jacket and matching trousers · taped seams",
     price: "R225.00",
