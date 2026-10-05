@@ -69,8 +69,32 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-6 text-xs text-neutral-400">
-          © 2026 Tuff Workwear · Part of the Taurus Workwear group · POPIA · Terms · Privacy
+        {/* Mirrors the Taurus footer: group line with a link across, then the credit. */}
+        <div className="mt-12 space-y-1.5 border-t border-white/10 pt-6 text-sm text-neutral-400">
+          <p>
+            Tuff Workwear, part of the{" "}
+            <a
+              className="text-white underline decoration-brand-orange decoration-2 underline-offset-[3px] hover:decoration-white"
+              href="https://www.taurusworkwear.co.za"
+              target="_blank"
+              rel="noopener"
+            >
+              Taurus Workwear group
+            </a>
+            . Factory in Stanger, office in Durban.
+          </p>
+          <p className="text-xs">
+            © {new Date().getFullYear()} Tuff Workwear.{" "}
+            <a
+              className="text-neutral-300 underline decoration-brand-orange decoration-2 underline-offset-[3px] hover:text-white"
+              href="https://www.lead-fire.co.za"
+              target="_blank"
+              rel="noopener"
+            >
+              Site design by Zakaria Desai
+            </a>
+            .
+          </p>
         </div>
       </div>
       <div className="h-[72px] lg:hidden" aria-hidden="true" />
